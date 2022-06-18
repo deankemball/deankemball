@@ -8,6 +8,7 @@ const nextConfig = {
     });
     return config;
   },
+  images: ["netlify.com", "app.netlify.com"],
 };
 
 module.exports = nextConfig;
