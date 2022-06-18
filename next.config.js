@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: ["netlify.com", "app.netlify.com"],
+  images: {
+    domains: ["netlify.com", "app.netlify.com"],
+  },
   reactStrictMode: true,
   webpack(config) {
     config.module.rules.push({
