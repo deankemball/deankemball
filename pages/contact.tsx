@@ -1,13 +1,13 @@
 import { ReactElement } from "react";
-import IndexHero from "../components/IndexHero";
+import ContactHero from "../components/ContactHero";
 import Layout from "../components/Layout";
 import type { NextPageWithLayout } from "./_app";
 
-const Home: NextPageWithLayout = () => {
-  return <IndexHero />;
+const Contact: NextPageWithLayout = () => {
+  return <ContactHero />;
 };
 
-Home.getLayout = function getLayout(page: ReactElement) {
+Contact.getLayout = function getLayout(page: ReactElement) {
   return (
     <Layout>
       <main>{page}</main>
@@ -15,4 +15,4 @@ Home.getLayout = function getLayout(page: ReactElement) {
   );
 };
 
-export default Home;
+export default Contact;
