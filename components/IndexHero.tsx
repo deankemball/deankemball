@@ -4,7 +4,7 @@ function IndexHero() {
       <p className="font-medium text-5xl">
         front end<br></br> developer
       </p>
-      <p className="text-md">with a focus on</p>
+      <p className="text-xl">with a focus on</p>
       <p className="font-medium text-5xl">UI/UX</p>
     </div>
   );

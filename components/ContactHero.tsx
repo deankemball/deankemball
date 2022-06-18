@@ -5,7 +5,7 @@ import Discord from "../public/discord.svg";
 
 function ContactHero() {
   return (
-    <div className="flex min-w-screen flex-col justify-between py-6 text-black bg-white">
+    <div className="flex min-w-screen flex-col justify-between py-6 text-black items-center">
       <div className="flex-col space-y-2">
         <Link href={"https://twitter.com/deankemball"}>
           <a>
