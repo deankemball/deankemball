@@ -14,7 +14,9 @@ const About: NextPageWithLayout = () => {
 About.getLayout = function getLayout(page: ReactElement) {
   return (
     <Layout>
-      <main>{page}</main>
+      <main className="h-screen flex flex-col justify-center px-8 self-center m-auto max-w-[520px] pb-16">
+        {page}
+      </main>
     </Layout>
   );
 };

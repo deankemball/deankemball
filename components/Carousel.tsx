@@ -65,7 +65,10 @@ function NextJsCarousel() {
         }
       >
         {folio.map((img, idx) => (
-          <div className="font-inter flex flex-col" key={idx}>
+          <div
+            className="px-6 font-inter flex flex-col m-auto max-w-[400px] md:max-w-[540px] lg:max-w-[640px] md:pt-8"
+            key={idx}
+          >
             <div className="text-right">{folioNames[idx]}</div>
 
             <div>

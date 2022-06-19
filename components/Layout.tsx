@@ -4,23 +4,15 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
 export default function Layout({ children }: any) {
-  let router = useRouter().asPath.split("/")[1];
-  if (router === "") {
-    router = "home";
-  }
-  const [selected, setSelected] = useState("");
-
-  useEffect(() => {
-    setSelected(router);
-  }, [router]);
-
   return (
     <>
-      <div className="min-h-screen w-screen bg-white flex-col flex justify-between px-8 py-6">
-        <Header />
+      <div className="min-h-screen w-screen bg-white flex-col flex justify-between">
+        <div className="flex-col space-y-2 absolute left-8 top-6">
+          <Header />
+        </div>
         <main>{children}</main>
-        <div className="flex-col space-y-2">
-          <Footer selected={selected} />
+        <div className="flex-col space-y-2 absolute right-8 bottom-6">
+          <Footer />
         </div>
       </div>
     </>

@@ -1,9 +1,21 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 let menuItems = ["home", "about", "portfolio", "contact"];
 
-const Footer: Function = (selected: string): JSX.Element[] =>
-  menuItems.map((item, i) => {
+export default function Footer(): JSX.Element[] {
+  let router = useRouter().asPath.split("/")[1];
+  if (router === "") {
+    router = "home";
+  }
+  const [selected, setSelected] = useState("");
+
+  useEffect(() => {
+    setSelected(router);
+  }, [router]);
+
+  return menuItems.map((item, i) => {
     return (
       <>
         <div
@@ -14,9 +26,12 @@ const Footer: Function = (selected: string): JSX.Element[] =>
             <a
               className={
                 selected === item
-                  ? "border-b-red text-red border-b-2"
-                  : "border-b-red border-b-2"
+                  ? selected != "home"
+                    ? "border-b-red text-red border-b-2 transition-all duration-300"
+                    : "border-b-red border-b-2 transition-all duration-300"
+                  : "border-b-red border-b-2 transition-all duration-300"
               }
+              onClick={() => setSelected(item)}
             >
               {item}
             </a>
@@ -25,5 +40,4 @@ const Footer: Function = (selected: string): JSX.Element[] =>
       </>
     );
   });
-
-export default Footer;
+}

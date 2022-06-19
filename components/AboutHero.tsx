@@ -1,6 +1,6 @@
 function AboutHero() {
   return (
-    <div className="font-inter text-xl tracking-wide flex-col space-y-4 mx-auto">
+    <div className="font-inter text-xl md:text-2xl tracking-wide flex-col space-y-4 mx-auto">
       <p>
         I am a self taught{" "}
         <strong>media artist who transitioned into web development.</strong>

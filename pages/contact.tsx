@@ -10,7 +10,9 @@ const Contact: NextPageWithLayout = () => {
 Contact.getLayout = function getLayout(page: ReactElement) {
   return (
     <Layout>
-      <main>{page}</main>
+      <main className="h-screen flex flex-col justify-center self-center pb-16">
+        {page}
+      </main>
     </Layout>
   );
 };
