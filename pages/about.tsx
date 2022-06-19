@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import { ThemeProvider } from "next-themes";
 import { ReactElement } from "react";
 import AboutHero from "../components/AboutHero";
 import Footer from "../components/Footer";

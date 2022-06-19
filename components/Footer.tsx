@@ -1,6 +1,8 @@
+import { useTheme } from "next-themes";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import ThemeSwitch from "./ThemeSwitch";
 
 let menuItems = ["home", "about", "portfolio", "contact"];
 
@@ -17,12 +19,12 @@ export default function Footer(): JSX.Element {
 
   return (
     <div>
-      {menuItems.map((item) => {
+      {menuItems.map((item, i) => {
         return (
           <>
             <div
               className="font-inter font-regular tracking-wide text-3xl text-right"
-              key={item}
+              key={i}
             >
               <Link href={item === "home" ? "/" : `/${item}`}>
                 <a
