@@ -4,7 +4,7 @@ import { Carousel } from "react-responsive-carousel";
 import Image from "next/image";
 import Link from "next/link";
 
-const folio: string[] = ["/../public/media-1.png", "/../public/media-2.png"];
+const folio: string[] = ["/media-1.png", "/media-2.png"];
 const folioNames: string[] = ["Dean Wallflower", "MERCH BABE"];
 const folioLinks: string[] = [
   "https://deanwallflower.com/",
