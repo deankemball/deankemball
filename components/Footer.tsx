@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import ThemeSwitch from "./ThemeSwitch";
 
-let menuItems = ["home", "about", "portfolio", "contact"];
+export const menuItems = ["home", "about", "portfolio", "contact"];
 
 export default function Footer(): JSX.Element {
   let router = useRouter().asPath.split("/")[1];
@@ -15,6 +15,7 @@ export default function Footer(): JSX.Element {
 
   useEffect(() => {
     setSelected(router);
+    // console.log(router);
   }, [router]);
 
   return (

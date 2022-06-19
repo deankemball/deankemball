@@ -24,6 +24,7 @@ function NextJsCarousel() {
         showStatus={false}
         showIndicators={false}
         emulateTouch={true}
+        showThumbs={false}
         // renderArrowPrev={(
         //   clickHandler: () => void,
         //   hasPrev: boolean,
@@ -67,7 +68,7 @@ function NextJsCarousel() {
       >
         {folio.map((img, idx) => (
           <div
-            className="px-6 font-inter dark:text-white text-black duration-500 flex flex-col m-auto max-w-[400px] md:max-w-[540px] lg:max-w-[640px] md:pt-8"
+            className="px-6 font-inter select-none cursor-pointer dark:text-white text-black duration-500 flex flex-col m-auto max-w-[400px] md:max-w-[540px] lg:max-w-[640px] md:pt-8"
             key={idx}
           >
             <div className="text-right">{folioNames[idx]}</div>
