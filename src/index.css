@@ -30,3 +30,8 @@ a {
   background: red;
   border: none;
 } */
+
+.carousel .carousel.root .carousel.slide .button .control-arrow .control-next {
+  background-color: red;
+  text-color: red;
+}

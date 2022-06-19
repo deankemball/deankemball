@@ -15,8 +15,8 @@ export default function Layout({ children }: any) {
           dark: "dark",
         }}
       >
-        <div className="min-h-screen w-screen bg-white dark:bg-black flex-col flex justify-between">
-          <div className="flex-col space-y-2 absolute left-8 top-6">
+        <div className="min-h-screen w-screen bg-white dark:bg-black flex-col flex justify-between z-50">
+          <div className="flex-col space-y-2 absolute left-8 top-6 z-50">
             <Header />
           </div>
           <div className="absolute left-8 bottom-6">

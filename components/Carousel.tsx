@@ -3,6 +3,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import Image from "next/image";
 import Link from "next/link";
+import Left from "../public/left.svg";
+import Right from "../public/right.svg";
 
 const folio: string[] = ["/media-1.png", "/media-2.png"];
 const folioNames: string[] = ["Dean Wallflower", "MERCH BABE"];
@@ -12,17 +14,6 @@ const folioLinks: string[] = [
 ];
 
 function NextJsCarousel() {
-  const [counter, setCounter] = useState(0);
-  const max = folio.length;
-  function showCounter() {
-    if (counter === max - 1) {
-      setCounter(0);
-    } else {
-      setCounter(counter + 1);
-    }
-    console.log({ max: max });
-    console.log({ counter: counter });
-  }
   return (
     <div className="w-full text-center">
       <Carousel
@@ -33,6 +24,16 @@ function NextJsCarousel() {
         showStatus={false}
         showIndicators={false}
         emulateTouch={true}
+        // renderArrowPrev={(
+        //   clickHandler: () => void,
+        //   hasPrev: boolean,
+        //   label: string
+        // ) => <Left />}
+        // renderArrowNext={(
+        //   clickHandler: () => void,
+        //   hasPrev: boolean,
+        //   label: string
+        // ) => <Right />}
         // renderIndicator={(onClickHandler, isSelected, index, label) => {
         //   const selected = "text-red px-2";
         //   const selectedStyle = "text-white px-2";
@@ -51,22 +52,22 @@ function NextJsCarousel() {
         //     </span>
         //   );
         // }}
-        renderThumbs={() =>
-          folio.map((img, idx) => (
-            <div key={idx} className="w-full h-8 relative">
-              <Image
-                src={img}
-                layout="fill"
-                objectFit="contain"
-                alt="logo"
-              ></Image>
-            </div>
-          ))
-        }
+        // renderThumbs={() =>
+        //   folio.map((img, idx) => (
+        //     <div key={idx} className="w-full h-8 relative">
+        //       <Image
+        //         src={img}
+        //         layout="fill"
+        //         objectFit="contain"
+        //         alt="logo"
+        //       ></Image>
+        //     </div>
+        //   ))
+        // }
       >
         {folio.map((img, idx) => (
           <div
-            className="px-6 font-inter flex flex-col m-auto max-w-[400px] md:max-w-[540px] lg:max-w-[640px] md:pt-8"
+            className="px-6 font-inter dark:text-white text-black duration-500 flex flex-col m-auto max-w-[400px] md:max-w-[540px] lg:max-w-[640px] md:pt-8"
             key={idx}
           >
             <div className="text-right">{folioNames[idx]}</div>
