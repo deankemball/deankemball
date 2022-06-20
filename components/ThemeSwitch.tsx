@@ -9,7 +9,7 @@ const ThemeSwitch = () => {
 
   // useEffect only runs on the client, so now we can safely show the UI
   useEffect(() => {
-    setTheme("dark");
+    setTheme("light");
     setMounted(true);
   }, []);
 
@@ -25,7 +25,7 @@ const ThemeSwitch = () => {
     <>
       <button
         onClick={() => changeHandler()}
-        className="text-black dark:text-white text-xl md:text-2xl opacity-50 border-b-2 border-red"
+        className="text-black dark:text-white text-xl md:text-2xl opacity-50 decoration-red underline underline-offset-2"
       >
         {theme === "dark" ? "light" : "dark"}
       </button>

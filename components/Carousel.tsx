@@ -84,7 +84,7 @@ function NextJsCarousel() {
               ></Image>
             </div>
             <Link href={folioLinks[idx]}>
-              <a className="border-b-2 border-red inline-block mr-auto hover:cursor-pointer">
+              <a className="decoration-red underline underline-offset-2 inline-block mr-auto hover:cursor-pointer">
                 {folioLinks[idx]}
               </a>
             </Link>

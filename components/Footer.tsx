@@ -32,9 +32,9 @@ export default function Footer(): JSX.Element {
                   className={
                     selected === item
                       ? selected != "home"
-                        ? "border-b-red text-red border-b-2"
-                        : "border-b-red border-b-2"
-                      : "border-b-red border-b-2"
+                        ? "text-red decoration-red underline underline-offset-2"
+                        : "decoration-red underline underline-offset-2"
+                      : "decoration-red underline underline-offset-2"
                   }
                   onClick={() => setSelected(item)}
                 >
