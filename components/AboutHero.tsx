@@ -3,14 +3,18 @@ function AboutHero() {
     <div className="font-inter text-xl md:text-2xl tracking-wide flex-col space-y-4 mx-auto select-none">
       <p>
         I am a self taught{" "}
-        <strong>media artist who transitioned into web development.</strong>
+        <span className="font-semibold">
+          media artist who transitioned into web development.
+        </span>
       </p>
       <p>
-        Having previously worked as a freelance <em>photographer</em>,{" "}
-        <em>video editor</em> and <em>graphic designer</em>,{" "}
-        <strong>
+        Having previously worked as a freelance{" "}
+        <span className="italic">photographer</span>,{" "}
+        <span className="italic">video editor</span> and{" "}
+        <span className="italic">graphic designer</span>,{" "}
+        <span className="font-semibold">
           I have a unique skillset that I am able to leverage in my designs.
-        </strong>
+        </span>
       </p>
     </div>
   );

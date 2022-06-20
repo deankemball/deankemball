@@ -24,7 +24,7 @@ function IndexHero() {
           front end<br></br> developer
         </p>
         <p className="text-xl md:text-3xl">with a focus on</p>
-        <p className="font-medium text-5xl md:text-7xl">UI/UX</p>
+        <p className="font-medium text-5xl md:text-7xl">UX</p>
       </div>
     </motion.div>
   );
