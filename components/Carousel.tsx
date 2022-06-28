@@ -28,10 +28,6 @@ function Carousel() {
   const [curr, setCurr] = useState(0);
   const length = Projects.length;
 
-  if (!Array.isArray(Projects) || Projects.length <= 0) {
-    null;
-  }
-
   const nextSlide = () => {
     setCurr(curr === length - 1 ? 0 : curr + 1);
   };
