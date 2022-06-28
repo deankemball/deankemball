@@ -10,9 +10,9 @@ const Projects = [
     link: "https://merchbabe.net/",
   },
   {
-    image: "/../public/media-1.jpg",
+    image: "/../public/media-3.jpg",
     title: "Dean Wallflower",
-    link: "https://deanwallflower.com/",
+    link: "https://dw-tw.netlify.com/",
   },
 ];
 

@@ -1,98 +1,94 @@
-import React, { Component, useState } from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
+import React, { useState } from "react";
+// import useDimensions from "react-use-dimensions";
 import Image from "next/image";
+import Projects from "../src/Projects";
 import Link from "next/link";
 import Left from "../public/left.svg";
 import Right from "../public/right.svg";
+import { motion } from "framer-motion";
 
-const folio: string[] = ["/media-1.jpg", "/media-2.jpg"];
-const folioNames: string[] = ["Dean Wallflower", "MERCH BABE"];
-const folioLinks: string[] = [
-  "https://deanwallflower.com/",
-  "https://merchbabe.net/",
-];
+function Carousel() {
+  const [curr, setCurr] = useState(0);
+  const length = Projects.length;
 
-function NextJsCarousel() {
+  if (!Array.isArray(Projects) || Projects.length <= 0) {
+    null;
+  }
+
+  const nextSlide = () => {
+    setCurr(curr === length - 1 ? 0 : curr + 1);
+  };
+  const prevSlide = () => {
+    setCurr(curr === 0 ? length - 1 : curr - 1);
+  };
+
   return (
-    <div className="w-full text-center">
-      <Carousel
-        axis="horizontal"
-        infiniteLoop={true}
-        swipeable={true}
-        showArrows={false}
-        showStatus={false}
-        showIndicators={false}
-        emulateTouch={true}
-        showThumbs={false}
-        // renderArrowPrev={(
-        //   clickHandler: () => void,
-        //   hasPrev: boolean,
-        //   label: string
-        // ) => <Left />}
-        // renderArrowNext={(
-        //   clickHandler: () => void,
-        //   hasPrev: boolean,
-        //   label: string
-        // ) => <Right />}
-        // renderIndicator={(onClickHandler, isSelected, index, label) => {
-        //   const selected = "text-red px-2";
-        //   const selectedStyle = "text-white px-2";
-        //   const style: string = isSelected ? selected : selectedStyle;
-        //   return (
-        //     <span
-        //       className={style}
-        //       onClick={onClickHandler}
-        //       onKeyDown={onClickHandler}
-        //       key={index}
-        //       role="button"
-        //       tabIndex={0}
-        //       aria-label={`${label} ${index + 1}`}
-        //     >
-        //       {index + 1}
-        //     </span>
-        //   );
-        // }}
-        // renderThumbs={() =>
-        //   folio.map((img, idx) => (
-        //     <div key={idx} className="w-full h-8 relative">
-        //       <Image
-        //         src={img}
-        //         layout="fill"
-        //         objectFit="contain"
-        //         alt="logo"
-        //       ></Image>
-        //     </div>
-        //   ))
-        // }
-      >
-        {folio.map((img, idx) => (
-          <div
-            className="px-6 font-inter select-none cursor-pointer dark:text-white text-black duration-500 flex flex-col m-auto max-w-[400px] md:max-w-[540px] lg:max-w-[640px] md:pt-8"
-            key={idx}
-          >
-            <div className="text-right">{folioNames[idx]}</div>
-
-            <div>
+    <div className="h-screen w-1/2 max-w-[200px] md:max-w-[240px] mx-auto flex pb-8 md:pb-0">
+      <div className="cursor-pointer fixed left-8 top-[calc(50vh-32px)] border-b-[3.5px] border-red z-10">
+        <Left onClick={() => prevSlide()} />
+      </div>
+      <div className="cursor-pointer fixed right-8 top-[calc(50vh-32px)] border-b-[3.5px] border-red z-10">
+        <Right onClick={() => nextSlide()} />
+      </div>
+      {Projects.map((project, i) => (
+        <div key={i} className="select-none m-auto">
+          {i === curr && (
+            <motion.div
+              initial="pageInitial"
+              animate="pageAnimate"
+              exit="pageExit"
+              // variants={direction === "up" ? pageUp : pageDown}
+              variants={{
+                pageExit: {
+                  opacity: 0,
+                  // y: "100%",
+                  transition: {
+                    delay: 0.1,
+                    duration: 0.1,
+                    ease: "easeOut",
+                  },
+                },
+                pageAnimate: {
+                  opacity: 1,
+                  // y: "0%",
+                  transition: {
+                    delay: 0.1,
+                    duration: 0.15,
+                    ease: "easeIn",
+                  },
+                },
+                pageInitial: {
+                  opacity: 0,
+                  // y: "-100%",
+                  transition: {
+                    delay: 0.1,
+                    duration: 0.15,
+                    ease: "easeOut",
+                  },
+                },
+              }}
+            >
+              <div className="text-right select-none">{project.title}</div>
               <Image
-                src={img}
-                alt={`${folio} preview ${idx}`}
-                layout="responsive"
-                width={720}
-                height={540}
-                priority={idx === 0}
-              ></Image>
-            </div>
-            <Link href={folioLinks[idx]}>
-              <a className="decoration-red underline underline-offset-2 inline-block mr-auto hover:cursor-pointer">
-                {folioLinks[idx]}
-              </a>
-            </Link>
-          </div>
-        ))}
-      </Carousel>
+                src={project.image}
+                alt={`Project for ${project.title}`}
+                objectFit="cover"
+                layout="intrinsic"
+                priority={i === 0}
+                width={1080}
+                height={2166}
+              />
+              <Link href={project.link}>
+                <a className="decoration-red underline underline-offset-2 inline-block mr-auto cursor-pointer">
+                  {project.link}
+                </a>
+              </Link>
+            </motion.div>
+          )}
+        </div>
+      ))}
     </div>
   );
 }
 
-export default NextJsCarousel;
+export default Carousel;

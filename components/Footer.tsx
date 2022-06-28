@@ -24,7 +24,7 @@ export default function Footer(): JSX.Element {
         return (
           <>
             <div
-              className="font-inter font-regular tracking-wide text-3xl text-right"
+              className="font-inter font-regular tracking-wide text-2xl md:text-3xl text-right"
               key={i}
             >
               <Link href={item === "home" ? "/" : `/${item}`}>
