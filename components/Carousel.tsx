@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // import useDimensions from "react-use-dimensions";
 import Image from "next/image";
-import Projects from "../src/Projects";
+import Projects from "../public/Projects";
 import Link from "next/link";
 import Left from "../public/left.svg";
 import Right from "../public/right.svg";
@@ -25,10 +25,10 @@ function Carousel() {
   return (
     <div className="h-screen w-1/2 max-w-[200px] md:max-w-[240px] mx-auto flex pb-8 md:pb-0">
       <div className="cursor-pointer fixed left-8 top-[calc(50vh-32px)] border-b-[3.5px] border-red z-10">
-        <Left onClick={() => prevSlide()} />
+        <Left className="w-8 h-8" onClick={() => prevSlide()} />
       </div>
       <div className="cursor-pointer fixed right-8 top-[calc(50vh-32px)] border-b-[3.5px] border-red z-10">
-        <Right onClick={() => nextSlide()} />
+        <Right className="w-8 h-8" onClick={() => nextSlide()} />
       </div>
       {Projects.map((project, i) => (
         <div key={i} className="select-none m-auto">
