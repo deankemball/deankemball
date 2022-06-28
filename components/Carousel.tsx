@@ -6,7 +6,7 @@ import Link from "next/link";
 import Left from "../public/left.svg";
 import Right from "../public/right.svg";
 
-const folio: string[] = ["/media-1.png", "/media-2.png"];
+const folio: string[] = ["/media-1.jpg", "/media-2.jpg"];
 const folioNames: string[] = ["Dean Wallflower", "MERCH BABE"];
 const folioLinks: string[] = [
   "https://deanwallflower.com/",

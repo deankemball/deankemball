@@ -23,7 +23,7 @@ export default function Layout({ children }: any) {
             <ThemeSwitch />
           </div>
 
-          <main>{children}</main>
+          <main className="overflow-y-scroll">{children}</main>
           <div className="flex-col space-y-2 absolute right-8 bottom-6">
             <Footer />
           </div>
