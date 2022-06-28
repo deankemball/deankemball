@@ -1,11 +1,28 @@
 import React, { useState } from "react";
 // import useDimensions from "react-use-dimensions";
 import Image from "next/image";
-import Projects from "../public/Projects";
 import Link from "next/link";
 import Left from "../public/left.svg";
 import Right from "../public/right.svg";
 import { motion } from "framer-motion";
+
+const Projects = [
+  {
+    image: "/../public/media-1.jpg",
+    title: "Dean Wallflower",
+    link: "https://deanwallflower.com/",
+  },
+  {
+    image: "/../public/media-2.jpg",
+    title: "MERCH BABE",
+    link: "https://merchbabe.net/",
+  },
+  {
+    image: "/../public/media-3.jpg",
+    title: "Dean Wallflower",
+    link: "https://dw-tw.netlify.com/",
+  },
+];
 
 function Carousel() {
   const [curr, setCurr] = useState(0);
