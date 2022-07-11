@@ -8,14 +8,14 @@ import { motion } from "framer-motion";
 
 const Projects = [
   {
+    image: "/media-4.jpg",
+    title: "MERCH BABE",
+    link: "https://merchbabe.net/",
+  },
+  {
     image: "/media-1.jpg",
     title: "Dean Wallflower",
     link: "https://deanwallflower.com/",
-  },
-  {
-    image: "/media-2.jpg",
-    title: "MERCH BABE",
-    link: "https://merchbabe.net/",
   },
   {
     image: "/media-3.jpg",
