@@ -8,7 +8,7 @@ function ContactHero() {
   return (
     <div className="flex min-w-screen flex-col justify-between py-6 items-center">
       <div className="flex-col space-y-2">
-        <Link href={"https://github.com/deanwallflower"}>
+        <Link href={"https://github.com/deankemball"}>
           <a>
             <div className="flex justify-between space-x-2 items-center">
               <Github className="text-3xl md:text-4xl lg:text-5xl" />
