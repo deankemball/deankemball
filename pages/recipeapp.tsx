@@ -1,16 +1,16 @@
 import { ReactElement } from "react";
 import Layout from "../components/Layout";
-import PortfolioHero from "../components/PortfolioHero";
+import RecipeApp from "../components/RecipeApp";
 import type { NextPageWithLayout } from "./_app";
 
 const Portfolio: NextPageWithLayout = () => {
-  return <PortfolioHero />;
+  return <RecipeApp />;
 };
 
 Portfolio.getLayout = function getLayout(page: ReactElement) {
   return (
     <Layout>
-      <main className="h-screen flex flex-col justify-center self-center pb-16">
+      <main className="h-screen flex flex-col justify-start self-center">
         {page}
       </main>
     </Layout>
