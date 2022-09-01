@@ -19,7 +19,7 @@ const RecipeApp = () => {
           back
         </a>
       </Link>
-      {slides.map((slide) => {
+      {slides.map((slide, i) => {
         return (
           <>
             {" "}
@@ -30,6 +30,8 @@ const RecipeApp = () => {
               layout="intrinsic"
               width={1512}
               height={982}
+              sizes={"50"}
+              priority={i === 0}
             />
           </>
         );
