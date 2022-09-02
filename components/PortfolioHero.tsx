@@ -36,7 +36,10 @@ const Portfolio = () => {
           return (
             <>
               <Link href={project.link}>
-                <a className="flex flex-col h-full justify-between">
+                <a
+                  target={project.link.includes("http") ? "_blank" : ""}
+                  className="flex flex-col h-full justify-between"
+                >
                   <p className="text-xl md:text-2xl lg:text-3xl decoration-red underline underline-offset-2 ">
                     {project.title}
                   </p>
