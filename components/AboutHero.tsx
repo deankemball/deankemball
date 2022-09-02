@@ -1,6 +1,6 @@
 function AboutHero() {
   return (
-    <div className="font-inter text-xl md:text-2xl flex-col space-y-4 mx-auto select-none">
+    <div className="font-inter text-xl md:text-2xl lg:text-3xl flex-col space-y-4 mx-auto select-none w-72 md:w-auto lg:w-[25rem] leading-6 md:leading-7">
       <p>
         I am a self taught{" "}
         <span className="font-semibold">

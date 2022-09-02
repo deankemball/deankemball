@@ -9,6 +9,12 @@ const projects = [
     year: "2022",
   },
   {
+    title: "cell-dodger.app",
+    link: "https://cell-dodger.vercel.app/",
+    type: "online game project",
+    year: "2022",
+  },
+  {
     title: "recipe app",
     link: "/recipeapp",
     type: "ui/ux mockup",
@@ -25,25 +31,24 @@ const projects = [
 const Portfolio = () => {
   return (
     <div className="flex flex-col items-center font-inter">
-      <div className="flex flex-col gap-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 row-auto">
         {projects.map((project) => {
           return (
             <>
-              <div className="flex flex-col">
-                <Link href={project.link}>
-                  <a>
-                    <p className="text-xl md:text-2xl lg:text-3xl decoration-red underline underline-offset-2">
-                      {project.title}
-                    </p>
-                    <p className="w-48 break-words font-thin text-lg md:text-xl lg:text-2xl">
-                      {project.type}
-                    </p>
-                    <p className="w-48 break-words font-thin text-xs md:text-md lg:text-lg">
-                      {project.year}
-                    </p>
-                  </a>
-                </Link>
-              </div>
+              <Link href={project.link}>
+                <a className="flex flex-col h-full justify-between">
+                  <p className="text-xl md:text-2xl lg:text-3xl decoration-red underline underline-offset-2 ">
+                    {project.title}
+                  </p>
+                  <p className="w-40 font-light text-lg md:text-xl lg:text-2xl leading-4 md:leading-5 lg:leading-6">
+                    {project.type}
+                  </p>
+                  <div className="flex grow"></div>
+                  <p className="w-48 font-light text-base md:text-lg lg:text-xl leading-4 md:leading-5 lg:leading-6">
+                    {project.year}
+                  </p>
+                </a>
+              </Link>
             </>
           );
         })}
