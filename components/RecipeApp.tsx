@@ -88,7 +88,7 @@ const RecipeApp = () => {
           <Frame3
             width={isSmallScreen ? "100vw" : "25%"}
             height={isSmallScreen ? "70vh" : "100%"}
-            className="flex flex-shrink-0"
+            className="flex flex-shrink-0 my-auto"
           />
           <Frame4
             width={isSmallScreen ? "100vw" : "25%"}
@@ -146,13 +146,13 @@ const RecipeApp = () => {
               height={isSmallScreen ? "60%" : "100%"}
             />
           </div>
-          <div className="flex flex-col mb-auto mx-auto px-8 lg:px-0">
+          <div className="flex flex-col my-auto lg:mb-auto mx-auto px-8 lg:px-0">
             <Card5
               width={isSmallScreen ? "85vw" : "100%"}
               height={isSmallScreen ? "60%" : "100%"}
             />
           </div>
-          <div className="flex flex-col mb-auto mx-auto px-8 lg:px-0 gap-4">
+          <div className="flex flex-col my-auto lg:mb-auto mx-auto px-8 lg:px-0 gap-4">
             <Card6
               width={isSmallScreen ? "85vw" : "100%"}
               height={isSmallScreen ? "30%" : "100%"}
@@ -162,7 +162,7 @@ const RecipeApp = () => {
               height={isSmallScreen ? "30%" : "100%"}
             />
           </div>
-          <div className="flex flex-col mb-auto mx-auto px-8 lg:px-0">
+          <div className="flex flex-col my-auto lg:mb-auto mx-auto px-8 lg:px-0">
             <Card8
               width={isSmallScreen ? "85vw" : "100%"}
               height={isSmallScreen ? "30%" : "100%"}
@@ -172,7 +172,7 @@ const RecipeApp = () => {
               height={isSmallScreen ? "30%" : "100%"}
             />
           </div>
-          <div className="flex flex-col mb-auto mx-auto px-8 lg:px-0">
+          <div className="flex flex-col my-auto lg:mb-auto mx-auto px-8 lg:px-0">
             <Card10
               width={isSmallScreen ? "85vw" : "100%"}
               height={isSmallScreen ? "60%" : "100%"}
@@ -180,11 +180,26 @@ const RecipeApp = () => {
           </div>
         </div>
       </section>
-      <section id="4" className="bg-lightGreen h-screen w-screen lg:px-40">
-        <div className="flex w-full h-full gap-4">
-          <Colors1 className="pb-64 h-full" width={"33vw"} height={"100vh"} />
-          <Colors2 width={"33vw"} height={"100vh"} />
-          <Colors3 className="pt-64 h-full" width={"33vw"} height={"100vh"} />
+      <section
+        id="4"
+        className="bg-lightGreen h-screen w-screen flex flex-col justify-center overflow-x-scroll lg:px-40"
+      >
+        <div className="flex w-full h-full gap-4 overflow-x-scroll lg:overflow-x-auto">
+          <Colors1
+            className="w-full lg:pb-64 h-full flex flex-shrink-0 px-8 lg:w-1/3"
+            width={isSmallScreen ? "100%" : "33vw"}
+            height={"100vh"}
+          />
+          <Colors2
+            className="w-full h-full flex flex-shrink-0 px-8 lg:w-1/3"
+            width={isSmallScreen ? "100%" : "33vw"}
+            height={"100vh"}
+          />
+          <Colors3
+            className="w-full lg:pt-64 h-full flex flex-shrink-0 px-8 lg:w-1/3"
+            width={isSmallScreen ? "100%" : "33vw"}
+            height={"100vh"}
+          />
         </div>
       </section>
     </div>
