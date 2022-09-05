@@ -6,6 +6,10 @@
   font-family: "Inter";
   src: url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 }
+@font-face {
+  font-family: "IBM";
+  src: url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200&display=swap");
+}
 
 * {
   box-sizing: border-box;

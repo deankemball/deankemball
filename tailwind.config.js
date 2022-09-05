@@ -13,10 +13,16 @@ module.exports = {
       red: "#EF3E36",
       black: "#04080F",
       white: "#FCFCFC",
+      darkGreen: "#8BBC78",
+      lightGreen: "#E7F5D9",
+      whiteGreen: "#F6F8ED",
+      brown: "#513131",
+      orange: "#FB7E56",
     },
     extend: {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
+        ibm: ["IBM Plex Mono", "monospace"],
       },
     },
   },
