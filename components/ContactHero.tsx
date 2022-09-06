@@ -13,7 +13,7 @@ function ContactHero() {
             <div className="flex justify-between space-x-2 items-center">
               <Discord className="text-3xl md:text-4xl lg:text-5xl" />
               <div className="flex flex-grow bg-red h-[2.5px]"></div>
-              <div className="text-xl md:text-2xl lg:text-3xl">
+              <div className="text-2xl md:text-3xl lg:text-4xl">
                 @deankemball
               </div>
             </div>
@@ -24,7 +24,7 @@ function ContactHero() {
             <div className="flex justify-between space-x-2 items-center">
               <Github className="text-3xl md:text-4xl lg:text-5xl" />
               <div className="flex flex-grow bg-red h-[2.5px] min-w-2 w-6"></div>
-              <div className="text-xl md:text-2xl lg:text-3xl">
+              <div className="text-2xl md:text-3xl lg:text-4xl">
                 @deankemball
               </div>
             </div>
@@ -35,7 +35,7 @@ function ContactHero() {
             <div className="flex justify-between space-x-2 items-center">
               <Twitter className="text-3xl md:text-4xl lg:text-5xl" />
               <div className="flex flex-grow bg-red h-[2.5px]"></div>
-              <div className="text-xl md:text-2xl lg:text-3xl">
+              <div className="text-2xl md:text-3xl lg:text-4xl">
                 @deankemball
               </div>
             </div>
@@ -46,7 +46,7 @@ function ContactHero() {
             <div className="flex justify-between space-x-2 items-center">
               <Email className="text-3xl md:text-4xl lg:text-5xl" />
               <div className="flex flex-grow bg-red h-[2.5px] min-w-2 w-6"></div>
-              <div className="text-xl md:text-2xl lg:text-3xl">
+              <div className="text-2xl md:text-3xl lg:text-4xl">
                 deankemball@gmail.com
               </div>
             </div>

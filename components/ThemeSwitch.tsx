@@ -25,7 +25,7 @@ const ThemeSwitch = () => {
     <>
       <button
         onClick={() => changeHandler()}
-        className="text-black dark:text-white text-xl md:text-2xl opacity-50 decoration-red underline underline-offset-2"
+        className="text-black dark:text-white text-2xl md:text-3xl lg:text-4xl opacity-50 decoration-red underline underline-offset-2"
       >
         {theme === "dark" ? "light" : "dark"}
       </button>

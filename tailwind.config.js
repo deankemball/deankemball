@@ -18,6 +18,7 @@ module.exports = {
       whiteGreen: "#F6F8ED",
       brown: "#513131",
       orange: "#FB7E56",
+      mbOrange: "#FF4C00",
     },
     extend: {
       fontFamily: {

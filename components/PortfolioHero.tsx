@@ -4,7 +4,7 @@ import React from "react";
 const projects = [
   {
     title: "merchbabe.net",
-    link: "https://merchbabe.net/",
+    link: "/merchbabe",
     type: "artist portfolio & e-commerce",
     year: "2022",
   },
@@ -40,14 +40,14 @@ const Portfolio = () => {
                   target={project.link.includes("http") ? "_blank" : ""}
                   className="flex flex-col h-full justify-between"
                 >
-                  <p className="text-xl md:text-2xl lg:text-3xl decoration-red underline underline-offset-2 ">
+                  <p className="text-2xl md:text-3xl lg:text-4xl decoration-red underline underline-offset-2 ">
                     {project.title}
                   </p>
-                  <p className="w-40 font-light text-lg md:text-xl lg:text-2xl leading-4 md:leading-5 lg:leading-6">
+                  <p className="w-52 font-light text-xl md:text-2xl lg:text-3xl leading-5 md:leading-6 lg:leading-7">
                     {project.type}
                   </p>
                   <div className="flex grow"></div>
-                  <p className="w-48 font-light text-base md:text-lg lg:text-xl leading-4 md:leading-5 lg:leading-6">
+                  <p className="w-48 font-light text-lg md:text-xl lg:text-2xl leading-5 md:leading-6 lg:leading-7">
                     {project.year}
                   </p>
                 </a>

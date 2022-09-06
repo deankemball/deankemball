@@ -10,7 +10,7 @@ const Home: NextPageWithLayout = () => {
 Home.getLayout = function getLayout(page: ReactElement) {
   return (
     <Layout>
-      <main className="h-screen flex flex-col justify-center self-center pb-16">
+      <main className="h-screen flex flex-col justify-center self-center">
         {page}
       </main>
     </Layout>
