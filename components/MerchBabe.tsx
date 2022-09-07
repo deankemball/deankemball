@@ -11,8 +11,8 @@ import Frame8 from "../public/merchbabe/frame8.svg";
 import Frame9 from "../public/merchbabe/frame9.svg";
 import Frame10 from "../public/merchbabe/frame10.svg";
 import Link from "next/link";
-import Left from "../public/left.svg";
-import Right from "../public/right.svg";
+import Left from "../public/icons/left.svg";
+import Right from "../public/icons/right.svg";
 
 const useDeviceSize = () => {
   const [width, setWidth] = useState(0);

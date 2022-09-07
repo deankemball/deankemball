@@ -1,8 +1,8 @@
 import Link from "next/link";
-import Twitter from "../public/twitter3.svg";
-import Email from "../public/email.svg";
-import Discord from "../public/discord.svg";
-import Github from "../public/github.svg";
+import Twitter from "../public/contact/twitter.svg";
+import Email from "../public/contact/email.svg";
+import Discord from "../public/contact/discord.svg";
+import Github from "../public/contact/github.svg";
 
 function ContactHero() {
   return (
