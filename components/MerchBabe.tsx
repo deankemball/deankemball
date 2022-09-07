@@ -164,7 +164,7 @@ const MerchBabe = () => {
                 <div className="text-7xl">
                   <Right />
                 </div>
-                <Link href="https://wwww.merchbabe.net">
+                <Link href="https://www.merchbabe.net/">
                   <a>
                     <h1 className="font-bold text-5xl lg:text-7xl leading-[52px] lg:leading-[60px]">
                       link
