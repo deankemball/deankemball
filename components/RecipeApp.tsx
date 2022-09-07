@@ -44,13 +44,16 @@ const RecipeApp = () => {
   const isSmallScreen: boolean = useDeviceSize() < 1024;
 
   return (
-    <div className="flex flex-col w-screen">
+    <div className="flex flex-col w-screen snap-y snap-proximity">
       <Link href="/portfolio">
         <a className="absolute right-8 top-8 decoration-red underline underline-offset-2 font-inter font-regular tracking-wide text-2xl md:text-3xl text-right z-50">
           back
         </a>
       </Link>
-      <section id="1" className="bg-darkGreen h-screen">
+      <section
+        id="1"
+        className="bg-darkGreen h-screen snap-y snap-mandatory snap-center"
+      >
         <div className="flex flex-col lg:flex-row h-full w-screen justify-center items-center py-16 px-8 lg:py-20 lg:pl-36">
           <div className="flex flex-col font-ibm text-whiteGreen w-full lg:w-1/2 gap-2">
             <p className="text-3xl lg:text-5xl font-thin leading-7 lg:leading-8">
@@ -72,7 +75,7 @@ const RecipeApp = () => {
       </section>
       <section
         id="2"
-        className="bg-lightGreen h-screen flex flex-col justify-center"
+        className="bg-lightGreen h-screen flex flex-col justify-center snap-y snap-proximity snap-center"
       >
         <div className="flex overflow-x-scroll h-full w-screen items-center pb-16 lg:pb-20 lg:px-32">
           <Frame1
@@ -119,7 +122,7 @@ const RecipeApp = () => {
       </section>
       <section
         id="3"
-        className="bg-darkGreen h-screen flex flex-col justify-center overflow-x-scroll lg:overflow-auto"
+        className="bg-darkGreen h-screen flex flex-col justify-center overflow-x-scroll lg:overflow-auto snap-center"
       >
         <div className="flex lg:grid lg:grid-cols-4 lg:grid-rows-2 lg:place-items-start h-full w-screen py-16 lg:py-20 lg:px-32">
           <div className="flex m-auto px-8 lg:px-0">
@@ -182,7 +185,7 @@ const RecipeApp = () => {
       </section>
       <section
         id="4"
-        className="bg-lightGreen h-screen w-screen flex flex-col justify-center overflow-x-scroll lg:px-40"
+        className="bg-lightGreen h-screen w-screen flex flex-col justify-center overflow-x-scroll lg:px-40 snap-center"
       >
         <div className="flex w-full h-full gap-4 overflow-x-scroll lg:overflow-x-auto">
           <Colors1
