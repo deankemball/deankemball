@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
-import Layout from "../components/Layout";
-import MerchBabe from "../components/MerchBabe";
+import Layout from "../components/layout/Layout";
+import MerchBabe from "../components/pages/portfolio/MerchBabe";
 import type { NextPageWithLayout } from "./_app";
 
 const Portfolio: NextPageWithLayout = () => {

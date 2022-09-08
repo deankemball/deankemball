@@ -10,7 +10,7 @@ import {
 import "../src/index.css";
 import { motion, useUnmountEffect } from "framer-motion";
 import { Router } from "next/router";
-import { menuItems } from "../components/Footer";
+import { menuItems } from "../components/layout/Footer";
 
 export type NextPageWithLayout = NextPage & {
   getLayout?: (page: ReactElement) => ReactNode;

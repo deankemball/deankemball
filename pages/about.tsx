@@ -1,11 +1,6 @@
-import type { NextPage } from "next";
-import { ThemeProvider } from "next-themes";
 import { ReactElement } from "react";
-import AboutHero from "../components/AboutHero";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import HeadInfo from "../components/HeadInfo";
-import Layout from "../components/Layout";
+import AboutHero from "../components/pages/about/AboutHero";
+import Layout from "../components/layout/Layout";
 import type { NextPageWithLayout } from "./_app";
 
 const About: NextPageWithLayout = () => {

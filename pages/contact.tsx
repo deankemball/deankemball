@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
-import ContactHero from "../components/ContactHero";
-import Layout from "../components/Layout";
+import ContactHero from "../components/pages/contact/ContactHero";
+import Layout from "../components/layout/Layout";
 import type { NextPageWithLayout } from "./_app";
 
 const Contact: NextPageWithLayout = () => {

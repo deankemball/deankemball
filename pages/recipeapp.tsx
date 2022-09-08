@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
-import Layout from "../components/Layout";
-import RecipeApp from "../components/RecipeApp";
+import Layout from "../components/layout/Layout";
+import RecipeApp from "../components/pages/portfolio/RecipeApp";
 import type { NextPageWithLayout } from "./_app";
 
 const Portfolio: NextPageWithLayout = () => {
