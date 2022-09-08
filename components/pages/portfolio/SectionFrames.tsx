@@ -16,7 +16,7 @@ const SectionFrames = ({
   return (
     <section
       className={clsx(
-        { bgColor },
+        bgColor,
         "h-screen flex flex-col justify-center snap-y snap-proximity snap-center"
       )}
     >
