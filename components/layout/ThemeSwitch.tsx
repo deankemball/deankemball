@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
-import Dark from "../public/dark.svg";
-import Light from "../public/light.svg";
 
-const ThemeSwitch = () => {
+interface ThemeSwitchProps {
+  selected: string;
+}
+
+const ThemeSwitch = ({ selected }: ThemeSwitchProps) => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
@@ -25,7 +27,11 @@ const ThemeSwitch = () => {
     <>
       <button
         onClick={() => changeHandler()}
-        className="text-black dark:text-white text-2xl md:text-3xl lg:text-4xl opacity-50 decoration-red underline underline-offset-2"
+        className={
+          selected === "portfolioDemo"
+            ? "text-black decoration-black dark:text-white dark:decoration-white opacity-50 hover:opacity-100 underline underline-offset-2 transition-all duration-150 text-2xl md:text-3xl lg:text-4xl"
+            : "text-black dark:text-white text-2xl md:text-3xl lg:text-4xl decoration-red hover:text-red dark:hover:text-red underline underline-offset-2"
+        }
       >
         {theme === "dark" ? "light" : "dark"}
       </button>

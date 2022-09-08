@@ -1,10 +1,10 @@
 import { ReactElement } from "react";
-import Layout from "../components/layout/Layout";
-import RecipeApp from "../components/pages/portfolio/RecipeApp";
-import type { NextPageWithLayout } from "./_app";
+import Layout from "../../components/layout/Layout";
+import MerchBabe from "../../components/pages/portfolio/MerchBabe";
+import type { NextPageWithLayout } from "../_app";
 
 const Portfolio: NextPageWithLayout = () => {
-  return <RecipeApp />;
+  return <MerchBabe />;
 };
 
 Portfolio.getLayout = function getLayout(page: ReactElement) {

@@ -1,6 +1,4 @@
 import React, { SVGProps, useEffect, useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
 import Frame1 from "../../../public/recipeapp/frames/frame1.svg";
 import Frame2 from "../../../public/recipeapp/frames/frame2.svg";
 import Frame3 from "../../../public/recipeapp/frames/frame3.svg";
@@ -23,8 +21,6 @@ import Card10 from "../../../public/recipeapp/cards/card10.svg";
 import Colors1 from "../../../public/recipeapp/colors/colors1.svg";
 import Colors2 from "../../../public/recipeapp/colors/colors2.svg";
 import Colors3 from "../../../public/recipeapp/colors/colors3.svg";
-import BackButton from "../../layout/BackButton";
-import InfoBlockFront from "./InfoBlockFront";
 import Section1 from "./Section1";
 import SectionFrames from "./SectionFrames";
 
@@ -60,7 +56,6 @@ const RecipeApp = () => {
 
   return (
     <div className="flex flex-col w-screen snap-y snap-proximity">
-      <BackButton link={"/portfolio"} />
       <Section1
         type={"ui/ux mockup:"}
         title={"recipe app"}

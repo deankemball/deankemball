@@ -9,7 +9,6 @@ import Frame7 from "../../../public/merchbabe/frame7.svg";
 import Frame8 from "../../../public/merchbabe/frame8.svg";
 import Frame9 from "../../../public/merchbabe/frame9.svg";
 import Frame10 from "../../../public/merchbabe/frame10.svg";
-import BackButton from "../../layout/BackButton";
 import { framesType } from "./RecipeApp";
 import SectionFrames from "./SectionFrames";
 import Section1 from "./Section1";
@@ -58,7 +57,6 @@ const MerchBabe = () => {
 
   return (
     <>
-      <BackButton link={"/portfolio"} />
       <div className="flex flex-col w-screen h-full">
         <Section1
           type={"client project:"}
@@ -71,7 +69,7 @@ const MerchBabe = () => {
               height={isSmallScreen ? "30vh" : "50vh"}
             />
           }
-          bgColor={"bg-white"}
+          bgColor={""}
         />
         <SectionFrames
           bgColor={"bg-mbOrange"}
@@ -79,7 +77,7 @@ const MerchBabe = () => {
           isSmallScreen={isSmallScreen}
         />
         <SectionFrames
-          bgColor={"bg-white"}
+          bgColor={""}
           frames={frames2}
           isSmallScreen={isSmallScreen}
         />
