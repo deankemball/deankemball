@@ -29,11 +29,11 @@ const frames2: framesType[] = [
 ];
 
 const paragraphs = [
-  "The site is a mobile-first designed, single-page app that isresponsive all the way up to desktop.",
+  "The site is a mobile-first designed, single-page app that is responsive all the way up to desktop.",
   "The two main features are a list of portfolio works that are filterable by tags and a separate page for e-commerce which is integrated with PayPal.",
   "The site has an overwhelming brutalist design language, to match the graphic design style of the artist.",
-  "Marquees in the header and footer render on top of document text as it scrolls past.",
-  "Oversized fonts and menus are used on drop-downs and pop-ups.",
+  "Marquees in the header and footer are obscured by page content as it scrolls past.",
+  "Oversized typography is used on drop-downs, pop-ups, and menus.",
   "Display fonts are capatalized.",
   "Alerts are in the form of brief pop-ups from the bottom of the screen.",
   "It has three colors; black, white, and neon-orange.",
