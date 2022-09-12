@@ -49,8 +49,8 @@ const Portfolio = () => {
                     target={project.link.includes("http") ? "_blank" : ""}
                     className="flex flex-col h-full justify-between"
                   >
-                    <div className="flex gap-2 hover:text-red dark:hover:text-red">
-                      <div className="text-3xl flex items-center justify-center pt-2">
+                    <div className="flex gap-2 hover:text-red dark:hover:text-red align-middle">
+                      <div className="text-2xl md:text-3xl lg:text-4xl flex items-center justify-center pt-1">
                         {<project.icon />}
                       </div>
                       <p className="text-2xl md:text-3xl lg:text-4xl decoration-red underline underline-offset-2">
@@ -60,7 +60,7 @@ const Portfolio = () => {
                   </a>
                 </Link>
                 <div className="flex gap-2">
-                  <div className="text-3xl invisible transition-colors duration-500 flex items-start pt-2">
+                  <div className="text-xl md:text-2xl lg:text-3xl invisible flex items-start">
                     {<project.icon />}
                   </div>
                   <div className="flex flex-col select-none">
