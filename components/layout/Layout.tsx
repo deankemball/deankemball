@@ -34,7 +34,7 @@ export default function Layout({ children }: any) {
           dark: "dark",
         }}
       >
-        <div className="min-h-screen w-screen bg-white dark:bg-black flex-col flex justify-between z-50 relative">
+        <div className="min-h-screen w-screen bg-white dark:bg-black flex-col flex justify-between z-50 relative scrollbar-hide">
           {selected === "portfolioDemo" && (
             <BackButton link={"/portfolio"} selected={selected} />
           )}
@@ -45,7 +45,7 @@ export default function Layout({ children }: any) {
             <ThemeSwitch selected={selected} />
           </div>
 
-          <main className="overflow-y-scroll">{children}</main>
+          <main className="overflow-y-scroll scrollbar-hide">{children}</main>
           <div className="flex-col space-y-2 fixed right-8 bottom-6">
             <Footer setSelected={setSelected} selected={selected} />
           </div>
