@@ -11,7 +11,7 @@ const ThemeSwitch = ({ selected }: ThemeSwitchProps) => {
 
   // useEffect only runs on the client, so now we can safely show the UI
   useEffect(() => {
-    setTheme("light");
+    setTheme("dark");
     setMounted(true);
   }, []);
 
