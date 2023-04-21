@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Avatar from "public/about/dean-kemball-avatar.png";
+import Avatar from "/public/about/dean-kemball-avatar.png";
 import { motion } from "framer-motion";
 
 function AboutHero() {
