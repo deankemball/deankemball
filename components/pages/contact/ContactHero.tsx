@@ -15,11 +15,6 @@ const contactMethods = {
     icon: Github,
     handle: "@deankemball",
   },
-  twitter: {
-    link: "https://twitter.com/deankemball",
-    icon: Twitter,
-    handle: "@deankemball",
-  },
   email: {
     link: "mailto:deankemball@gmail.com",
     icon: Email,
