@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
+import clsx from "clsx";
 
 interface ThemeSwitchProps {
   selected: string;
@@ -27,11 +28,12 @@ const ThemeSwitch = ({ selected }: ThemeSwitchProps) => {
     <>
       <button
         onClick={() => changeHandler()}
-        className={
+        className={clsx(
+          "transition-colors",
           selected === "portfolioDemo"
-            ? "text-black decoration-black dark:text-white dark:decoration-white opacity-50 hover:opacity-100 underline underline-offset-2 transition-all duration-150 text-2xl md:text-3xl lg:text-4xl"
-            : "text-black dark:text-white text-2xl md:text-3xl lg:text-4xl decoration-red hover:text-red dark:hover:text-red underline underline-offset-2"
-        }
+            ? "text-black decoration-black dark:text-white dark:decoration-white opacity-50 hover:opacity-100 underline underline-offset-2 text-2xl md:text-3xl lg:text-4xl transition-all duration-150"
+            : "text-black dark:text-white text-2xl md:text-3xl lg:text-4xl decoration-red hover:text-red dark:hover:text-red underline underline-offset-2 transition-all duration-150"
+        )}
       >
         {theme === "dark" ? "light" : "dark"}
       </button>

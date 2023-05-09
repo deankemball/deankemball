@@ -129,8 +129,8 @@ export default function MyApp({
           opacity: 0,
           // y: "100%",
           transition: {
-            delay: 0.1,
-            duration: 0.2,
+            // delay: 0.1,
+            duration: 0.1,
             ease: "easeOut",
           },
         },
@@ -138,18 +138,18 @@ export default function MyApp({
           opacity: 1,
           // y: "0%",
           transition: {
-            delay: 0.1,
-            duration: 0.3,
-            ease: "easeIn",
+            // delay: 0.1,
+            duration: 0.15,
+            ease: "easeOut",
           },
         },
         pageInitial: {
           opacity: 0,
           // y: "-100%",
           transition: {
-            delay: 0.1,
-            duration: 0.3,
-            ease: "easeOut",
+            // delay: 0.1,
+            duration: 0.15,
+            ease: "easeIn",
           },
         },
       }}

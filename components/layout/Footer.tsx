@@ -26,13 +26,14 @@ export default function Footer({
           <Link href={item === "home" ? "/" : `/${item}`}>
             <a
               onClick={() => setSelected(item)}
-              className={
+              className={clsx(
+                "transition-colors",
                 selected === "portfolioDemo"
                   ? "text-black decoration-black dark:text-white dark:decoration-white opacity-50 hover:opacity-100 underline underline-offset-2 transition-colors duration-150"
                   : selected === item && selected != "home"
                   ? "text-red decoration-red underline underline-offset-2"
                   : "decoration-red hover:text-red underline underline-offset-2"
-              }
+              )}
             >
               {item}
             </a>
