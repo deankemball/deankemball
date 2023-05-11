@@ -16,7 +16,7 @@ const paragraphs = [
   "the main feature of the site is a calendar of upcoming events, with a modal to show more information.",
   "it aims to be fun and modern without being too serious or childlike.",
   "the background is a procedurally generated pattern, with colors matching the site.",
-  "upcoming features include internationalisation, and a link to their instagram.",
+  "upcoming features include internationalisation, and a gallery page which uses the instagram api to display their recent posts.",
 ];
 
 const frames1 = [Frame1, Frame2, Frame3];
