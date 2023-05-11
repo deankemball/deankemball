@@ -45,7 +45,9 @@ export default function Layout({ children }: any) {
             <ThemeSwitch selected={selected} />
           </div>
 
-          <main className="overflow-y-scroll scrollbar-hide">{children}</main>
+          <main className="overflow-y-scroll scrollbar-hide snap-y snap-mandatory">
+            {children}
+          </main>
           <div className="flex-col space-y-2 fixed right-8 bottom-6">
             <Footer setSelected={setSelected} selected={selected} />
           </div>

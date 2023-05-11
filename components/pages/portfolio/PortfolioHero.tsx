@@ -10,7 +10,7 @@ import Bus from "../../../public/icons/bus.svg";
 const projects = [
   {
     title: "wilma",
-    link: "https://www.kultourkutsche.de/",
+    link: "/portfolio/wilma",
     type: "community and culture",
     year: "2023",
     icon: Bus,

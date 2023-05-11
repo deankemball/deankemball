@@ -14,7 +14,7 @@ const SectionInfo = ({ bgColor, textColor, paragraphs }: SectionInfoProps) => {
   return (
     <div
       className={clsx(
-        "lg:h-screen w-screen px-8 py-20 lg:px-32 flex flex-col lg:justify-center font-ibm",
+        "lg:h-screen w-screen px-8 py-20 lg:px-32 flex flex-col lg:justify-center font-ibm snap-y snap-proximity snap-center",
         bgColor,
         textColor
       )}
@@ -43,7 +43,7 @@ const SectionInfo = ({ bgColor, textColor, paragraphs }: SectionInfoProps) => {
               </h1>
             </a>
           </Link>
-          <div className="text-7xl text-mbOrange">
+          <div className="text-7xl invisible">
             <Left />
           </div>
         </div>

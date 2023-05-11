@@ -19,11 +19,17 @@ module.exports = {
       brown: "#513131",
       orange: "#FB7E56",
       mbOrange: "#FF4C00",
+      wilma1: "#9381FF",
+      wilma2: "#FF84E8",
     },
     extend: {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
         ibm: ["IBM Plex Mono", "monospace"],
+        grotesk: ["Space Grotesk", "sans-serif"],
+      },
+      backgroundImage: {
+        confetti: "url('../public/wilma/confetti.webp')",
       },
     },
   },

@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import Link from "next/link";
 
 interface HeaderProps {
@@ -9,11 +10,12 @@ function Header({ selected }: HeaderProps) {
     <Link href={"/"}>
       <a>
         <div
-          className={
+          className={clsx(
+            "z-50",
             selected === "portfolioDemo"
               ? "text-black decoration-black dark:text-white dark:decoration-white opacity-50 hover:opacity-100 transition-colors select-none -space-y-2 text-2xl md:text-3xl lg:text-4xl cursor-pointer"
               : "text-black dark:text-white dark:decoration-white hover:text-red dark:hover:text-red transition-colors select-none -space-y-2 text-2xl md:text-3xl lg:text-4xl cursor-pointer"
-          }
+          )}
         >
           <p>dean</p>
           <p>kemball</p>

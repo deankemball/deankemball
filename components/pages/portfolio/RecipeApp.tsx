@@ -77,40 +77,40 @@ const RecipeApp = () => {
       />
       <section
         id="3"
-        className="bg-darkGreen h-screen flex flex-col justify-center overflow-x-scroll lg:overflow-auto snap-center"
+        className="bg-darkGreen h-screen flex flex-col justify-center overflow-x-scroll lg:overflow-auto snap-x snap-center"
       >
         <div className="flex lg:grid lg:grid-cols-4 lg:grid-rows-2 lg:place-items-start h-full w-screen py-16 lg:py-20 lg:px-32">
-          <div className="flex m-auto px-8 lg:px-0">
+          <div className="flex m-auto px-8 lg:px-0 snap-x snap-mandatory snap-center">
             <Card1
               width={isSmallScreen ? "85vw" : "100%"}
               height={isSmallScreen ? "60%" : "100%"}
             />
           </div>
-          <div className="flex m-auto px-8 lg:px-0">
+          <div className="flex m-auto px-8 lg:px-0 snap-x snap-mandatory snap-center">
             <Card2
               width={isSmallScreen ? "85vw" : "100%"}
               height={isSmallScreen ? "60%" : "100%"}
             />
           </div>
-          <div className="flex m-auto px-8 lg:px-0">
+          <div className="flex m-auto px-8 lg:px-0 snap-x snap-mandatory snap-center">
             <Card3
               width={isSmallScreen ? "85vw" : "100%"}
               height={isSmallScreen ? "60%" : "100%"}
             />
           </div>
-          <div className="flex m-auto px-8 lg:px-0">
+          <div className="flex m-auto px-8 lg:px-0 snap-x snap-mandatory snap-center">
             <Card4
               width={isSmallScreen ? "85vw" : "100%"}
               height={isSmallScreen ? "60%" : "100%"}
             />
           </div>
-          <div className="flex flex-col my-auto lg:mb-auto mx-auto px-8 lg:px-0">
+          <div className="flex flex-col my-auto lg:mb-auto mx-auto px-8 lg:px-0 snap-x snap-mandatory snap-center">
             <Card5
               width={isSmallScreen ? "85vw" : "100%"}
               height={isSmallScreen ? "60%" : "100%"}
             />
           </div>
-          <div className="flex flex-col my-auto lg:mb-auto mx-auto px-8 lg:px-0 gap-4">
+          <div className="flex flex-col my-auto lg:mb-auto mx-auto px-8 lg:px-0 gap-4 snap-x snap-mandatory snap-center">
             <Card6
               width={isSmallScreen ? "85vw" : "100%"}
               height={isSmallScreen ? "30%" : "100%"}
@@ -120,7 +120,7 @@ const RecipeApp = () => {
               height={isSmallScreen ? "30%" : "100%"}
             />
           </div>
-          <div className="flex flex-col my-auto lg:mb-auto mx-auto px-8 lg:px-0">
+          <div className="flex flex-col my-auto lg:mb-auto mx-auto px-8 lg:px-0 snap-x snap-mandatory snap-center">
             <Card8
               width={isSmallScreen ? "85vw" : "100%"}
               height={isSmallScreen ? "30%" : "100%"}
@@ -130,7 +130,7 @@ const RecipeApp = () => {
               height={isSmallScreen ? "30%" : "100%"}
             />
           </div>
-          <div className="flex flex-col my-auto lg:mb-auto mx-auto px-8 lg:px-0">
+          <div className="flex flex-col my-auto lg:mb-auto mx-auto px-8 lg:px-0 snap-x snap-mandatory snap-center">
             <Card10
               width={isSmallScreen ? "85vw" : "100%"}
               height={isSmallScreen ? "60%" : "100%"}
@@ -142,19 +142,19 @@ const RecipeApp = () => {
         id="4"
         className="bg-lightGreen h-screen w-full flex flex-col justify-center overflow-x-clip lg:px-40 snap-center"
       >
-        <div className="flex w-full h-full gap-4 overflow-x-scroll lg:overflow-x-auto scrollbar-hide">
+        <div className="flex w-full h-full gap-4 overflow-x-scroll lg:overflow-x-auto scrollbar-hide snap-x snap-mandatory snap-center">
           <Colors1
-            className="w-full lg:pb-64 h-full flex flex-shrink-0 px-8 lg:w-1/3"
+            className="w-full lg:pb-64 h-full flex flex-shrink-0 px-8 lg:w-1/3 snap-x snap-mandatory snap-center"
             width={isSmallScreen ? "100%" : "33vw"}
             height={"100vh"}
           />
           <Colors2
-            className="w-full h-full flex flex-shrink-0 px-8 lg:w-1/3"
+            className="w-full h-full flex flex-shrink-0 px-8 lg:w-1/3 snap-x snap-mandatory snap-center"
             width={isSmallScreen ? "100%" : "33vw"}
             height={"100vh"}
           />
           <Colors3
-            className="w-full lg:pt-64 h-full flex flex-shrink-0 px-8 lg:w-1/3"
+            className="w-full lg:pt-64 h-full flex flex-shrink-0 px-8 lg:w-1/3 snap-x snap-mandatory snap-center"
             width={isSmallScreen ? "100%" : "33vw"}
             height={"100vh"}
           />

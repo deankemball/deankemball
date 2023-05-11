@@ -1,6 +1,8 @@
 import React from "react";
 import InfoBlockFront from "./InfoBlockFront";
 import clsx from "clsx";
+import { StaticImageData } from "next/image";
+import Image from "next/image";
 
 interface Section1Props {
   type: string;
@@ -8,6 +10,7 @@ interface Section1Props {
   description: string;
   logo: any;
   bgColor: string;
+  bg?: StaticImageData;
 }
 
 const Section1 = ({
@@ -21,7 +24,7 @@ const Section1 = ({
     <section
       className={clsx(
         bgColor,
-        "h-screen snap-y snap-mandatory snap-center flex flex-col justify-center"
+        "h-screen w-screen snap-y snap-mandatory snap-center flex flex-col justify-center"
       )}
     >
       <div className="flex flex-col lg:flex-row h-3/4 lg:h-full w-screen justify-between lg:justify-center items-center py-16 px-8 lg:py-20 lg:pl-36">

@@ -20,14 +20,14 @@ const SectionFrames = ({
         "h-screen flex flex-col justify-center snap-y snap-proximity snap-center"
       )}
     >
-      <div className="flex overflow-x-scroll scrollbar-hide h-full w-screen items-center py-16 lg:py-20 lg:px-32">
+      <div className="flex overflow-x-scroll snap-x snap-mandatory snap-center scrollbar-hide h-full w-screen items-center py-16 lg:py-20 lg:px-32">
         {frames.map((Frame, i) => {
           return (
             <Frame
               key={i}
               width={isSmallScreen ? "100vw" : "25%"}
               height={isSmallScreen ? "70vh" : "100%"}
-              className="flex flex-shrink-0"
+              className="flex flex-shrink-0 snap-x snap-mandatory snap-center"
             />
           );
         })}
