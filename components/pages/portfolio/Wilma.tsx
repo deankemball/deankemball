@@ -84,6 +84,7 @@ const Wilma = () => {
           bgColor={"bg-wilma2"}
           textColor={"text-white"}
           paragraphs={paragraphs}
+          link="https://www.kultourkutsche.de/"
         />
       </div>
     </>

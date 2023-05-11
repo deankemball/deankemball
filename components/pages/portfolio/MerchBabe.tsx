@@ -85,6 +85,7 @@ const MerchBabe = () => {
           bgColor={"bg-mbOrange"}
           textColor={"text-white"}
           paragraphs={paragraphs}
+          link="https://merchbabe.net"
         />
       </div>
     </>

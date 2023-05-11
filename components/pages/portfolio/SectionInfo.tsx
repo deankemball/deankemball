@@ -8,9 +8,15 @@ interface SectionInfoProps {
   bgColor: string;
   textColor: string;
   paragraphs: string[];
+  link: string;
 }
 
-const SectionInfo = ({ bgColor, textColor, paragraphs }: SectionInfoProps) => {
+const SectionInfo = ({
+  bgColor,
+  textColor,
+  paragraphs,
+  link,
+}: SectionInfoProps) => {
   return (
     <div
       className={clsx(
@@ -36,7 +42,7 @@ const SectionInfo = ({ bgColor, textColor, paragraphs }: SectionInfoProps) => {
           <div className="text-7xl">
             <Right />
           </div>
-          <Link href="https://www.merchbabe.net/">
+          <Link href={link}>
             <a>
               <h1 className="font-bold text-5xl lg:text-7xl leading-[52px] lg:leading-[60px] underline underline-offset-4 decoration-4">
                 link
