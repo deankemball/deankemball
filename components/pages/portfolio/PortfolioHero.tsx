@@ -30,18 +30,18 @@ const projects = [
     icon: Fire,
   },
   {
-    title: "recipe app",
-    link: "/portfolio/recipeapp",
-    type: "ui/ux mockup",
-    year: "2022",
-    icon: Carrot,
-  },
-  {
     title: "cell-dodger",
     link: "https://cell-dodger.vercel.app/",
     type: "online game project",
     year: "2022",
     icon: Game,
+  },
+  {
+    title: "recipe app",
+    link: "/portfolio/recipeapp",
+    type: "ui/ux mockup",
+    year: "2022",
+    icon: Carrot,
   },
 ];
 
