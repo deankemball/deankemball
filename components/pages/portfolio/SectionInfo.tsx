@@ -20,13 +20,13 @@ const SectionInfo = ({
   return (
     <div
       className={clsx(
-        "lg:h-screen w-screen px-8 py-20 lg:px-32 flex flex-col lg:justify-center font-ibm snap-y snap-proximity snap-center",
+        "h-screen w-screen lg:px-32 flex flex-col justify-start md:justify-center font-ibm snap-y snap-start",
         bgColor,
         textColor
       )}
     >
-      <div className="lg:columns-2 gap-8 max-w-6xl mx-auto relative">
-        <h1 className="absolute -top-16 font-bold text-5xl lg:text-7xl leading-[52px] lg:leading-[60px]">
+      <div className="lg:columns-2 px-8 py-20  gap-8 max-w-6xl mx-auto relative h-screen overflow-y-scroll">
+        <h1 className="flex font-bold text-5xl lg:text-7xl leading-[52px] lg:leading-[60px]">
           info
         </h1>
         <div className="flex flex-col gap-4 text-2xl lg:text-4xl leading-6 lg:leading-8 font-thin">

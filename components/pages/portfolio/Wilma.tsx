@@ -39,10 +39,10 @@ const useDeviceSize = () => {
 const Logo = () => {
   return (
     <h1 className="flex flex-1 mx-auto flex-col justify-center items-center font-grotesk lg:-ml-40">
-      <p className="text-9xl xl:text-[156px] font-semibold tracking-wide -mb-5 xl:-mb-8">
+      <p className="text-7xl md:text-9xl xl:text-[156px] font-semibold tracking-wide -mb-3 md:-mb-5 xl:-mb-8">
         WILMA
       </p>
-      <p className="text-[42px] xl:text-[52px] tracking-[0.02rem] font-medium ml-[16px] xl:ml-[32px]">
+      <p className="text-[24px] md:text-[42px] xl:text-[52px] tracking-[0.02rem] font-medium ml-[16px] xl:ml-[32px]">
         KUL<em>TOUR</em> KUTSCHE
       </p>
     </h1>
