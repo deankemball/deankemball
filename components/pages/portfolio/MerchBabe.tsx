@@ -28,7 +28,7 @@ const frames2: framesType[] = [
 ];
 
 const paragraphs = [
-  "The site is a mobile-first designed that is responsive all the way up to desktop.",
+  "The site is a mobile-first designed web app that is responsive all the way up to desktop.",
   "The two main features are a responsive grid of portfolio works that are filterable by tags and a separate page for e-commerce which is integrated with PayPal.",
   "The site has an overwhelming brutalist design language, to match the graphic design style of the artist.",
   "Marquees in the header and footer are obscured by page content as it scrolls past.",
