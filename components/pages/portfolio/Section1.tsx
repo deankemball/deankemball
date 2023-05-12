@@ -11,6 +11,7 @@ interface Section1Props {
   logo: any;
   bgColor: string;
   bg?: StaticImageData;
+  textColor: string;
 }
 
 const Section1 = ({
@@ -19,11 +20,13 @@ const Section1 = ({
   description,
   logo,
   bgColor,
+  textColor,
 }: Section1Props) => {
   return (
     <section
       className={clsx(
         bgColor,
+        textColor,
         "h-screen w-screen snap-y snap-mandatory snap-center flex flex-col justify-center items-center"
       )}
     >

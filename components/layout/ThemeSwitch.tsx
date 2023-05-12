@@ -31,7 +31,7 @@ const ThemeSwitch = ({ selected }: ThemeSwitchProps) => {
         className={clsx(
           "transition-colors",
           selected === "portfolioDemo"
-            ? "text-black decoration-black dark:text-white dark:decoration-white opacity-50 hover:opacity-100 underline underline-offset-2 text-2xl md:text-3xl lg:text-4xl transition-all duration-150"
+            ? "hidden"
             : "text-black dark:text-white text-2xl md:text-3xl lg:text-4xl decoration-red hover:text-red dark:hover:text-red underline underline-offset-2 transition-all duration-150"
         )}
       >

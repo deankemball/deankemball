@@ -45,7 +45,7 @@ const useDeviceSize = () => {
 
 const Logo = () => {
   return (
-    <div className="font-hubot flex flex-1 mx-auto flex-col justify-center items-center lg:-ml-40">
+    <div className="font-hubot flex flex-1 mx-auto flex-col justify-center items-center lg:-ml-40 text-white">
       <h1 className="flex flex-col shadow-lg lg:shadow-xl xl:shadow-2xl text-4xl md:text-7xl lg:text-7xl xl:text-9xl font-black italic border-dashed border-[2px] md:border-[3px] lg:border-3 xl:border-4 border-white bg-black/40 pl-4 pr-20 py-4">
         <span className="-mb-3 lg:-mb-5 xl:-mb-7">dean</span>
         <span>wallflower</span>
@@ -73,6 +73,7 @@ const Wilma = () => {
             <Logo />
           }
           bgColor={"bg-dwred"}
+          textColor={"text-white"}
           // bg={bg}
         />
         <SectionFramesImageDesktop

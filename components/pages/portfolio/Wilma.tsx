@@ -68,6 +68,7 @@ const Wilma = () => {
             <Logo />
           }
           bgColor={"bg-wilma1"}
+          textColor={"text-white"}
           // bg={bg}
         />
         <SectionFramesImage

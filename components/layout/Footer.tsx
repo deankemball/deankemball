@@ -29,7 +29,7 @@ export default function Footer({
               className={clsx(
                 "transition-colors",
                 selected === "portfolioDemo"
-                  ? "text-black decoration-black dark:text-white dark:decoration-white opacity-50 hover:opacity-100 underline underline-offset-2 transition-colors duration-150"
+                  ? "text-white decoration-white opacity-50 hover:opacity-100 underline underline-offset-2 transition-colors duration-150"
                   : selected === item && selected != "home"
                   ? "text-red decoration-red underline underline-offset-2"
                   : "decoration-red hover:text-red underline underline-offset-2"

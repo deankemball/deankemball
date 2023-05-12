@@ -70,6 +70,7 @@ const MerchBabe = () => {
             />
           }
           bgColor={""}
+          textColor={""}
         />
         <SectionFrames
           bgColor={"bg-mbOrange"}

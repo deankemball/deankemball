@@ -69,6 +69,7 @@ const RecipeApp = () => {
           />
         }
         bgColor={"bg-darkGreen"}
+        textColor="text-white"
       />
       <SectionFrames
         bgColor={"bg-lightGreen"}
