@@ -20,7 +20,7 @@ const SectionInfo = ({
   return (
     <div
       className={clsx(
-        "h-screen w-screen lg:px-32 flex flex-col justify-start md:justify-center md:my-auto font-ibm snap-y snap-center",
+        "h-screen w-screen lg:px-32 flex flex-col justify-start md:justify-center md:my-auto font-ibm snap-y snap-center overflow-y-scroll scrollbar-hide",
         bgColor,
         textColor
       )}
@@ -29,7 +29,7 @@ const SectionInfo = ({
         <h1 className="flex font-bold text-5xl lg:text-7xl leading-[52px] lg:leading-[60px]">
           info
         </h1>
-        <div className="flex flex-col gap-4 text-2xl lg:text-3xl leading-6 lg:leading-8 font-thin">
+        <div className="flex flex-col gap-4 text-lg leading-4 lg:text-3xl md:leading-6 lg:leading-8 font-thin">
           {paragraphs.map((paragraph, i) => {
             return (
               <p className="break-words" key={i}>

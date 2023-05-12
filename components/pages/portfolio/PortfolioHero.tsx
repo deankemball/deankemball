@@ -48,7 +48,7 @@ const projects = [
 const Portfolio = () => {
   return (
     <div className="flex flex-col items-center font-inter">
-      <div className="grid grid-cols-1 md:grid-cols-2 row-auto gap-4 md:gap-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 row-autu gap-4 md:gap-4">
         {projects.map((project, i) => {
           return (
             <div key={project.title} className="flex flex-col gap-2 h-full">
@@ -59,7 +59,7 @@ const Portfolio = () => {
                 >
                   <div className="flex flex-col">
                     <div className="flex flex-col">
-                      <p className="ml-[32px] md:ml-[38px] lg:ml-[44px] font-light text-white/50 text-sm md:text-xl lg:text-2xl leading-none -mb-1 md:-mb-[6px] lg:-mb-2">
+                      <p className="ml-[32px] md:ml-[38px] lg:ml-[44px] font-light text-black/50 dark:text-white/50 text-sm md:text-md lg:text-lg leading-none -mb-1 md:-mb-[6px] lg:-mb-2 transition-colors">
                         {project.year}
                       </p>
                       <div className="flex gap-2 align-middle group">
