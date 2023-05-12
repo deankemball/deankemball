@@ -24,10 +24,10 @@ const Section1 = ({
     <section
       className={clsx(
         bgColor,
-        "h-screen w-screen snap-y snap-mandatory snap-center flex flex-col justify-center"
+        "h-screen w-screen snap-y snap-mandatory snap-center flex flex-col justify-center items-center"
       )}
     >
-      <div className="flex flex-col lg:flex-row h-3/4 lg:h-full w-screen justify-between lg:justify-center items-center py-16 px-8 lg:py-20 lg:pl-36">
+      <div className="flex flex-col lg:flex-row h-3/4 lg:h-full w-full max-w-[1600px] justify-between lg:justify-center items-center py-16 px-8 lg:py-20 lg:pl-36">
         <InfoBlockFront type={type} title={title} description={description} />
         {logo}
       </div>

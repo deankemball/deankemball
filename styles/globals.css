@@ -14,6 +14,14 @@
   font-family: "Space Grotesk";
   src: url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@100;200;300;400;500;600&display=swap");
 }
+@font-face {
+  font-family: "Hubot Sans";
+  font-style: normal;
+  src: url("/fonts/Hubot-Sans.woff2") format("woff2 supports variations"),
+    url("/fonts/Hubot-Sans.woff2") format("woff2-variations");
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
 
 * {
   box-sizing: border-box;
@@ -32,4 +40,8 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+.text-fat {
+  font-weight: 900;
+  font-stretch: 125%;
 }

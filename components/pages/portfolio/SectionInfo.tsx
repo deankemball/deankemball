@@ -20,16 +20,16 @@ const SectionInfo = ({
   return (
     <div
       className={clsx(
-        "h-screen w-screen lg:px-32 flex flex-col justify-start md:justify-center font-ibm snap-y snap-start",
+        "h-screen w-screen lg:px-32 flex flex-col justify-start md:justify-center md:my-auto font-ibm snap-y snap-center",
         bgColor,
         textColor
       )}
     >
-      <div className="lg:columns-2 px-8 py-20  gap-8 max-w-6xl mx-auto relative h-screen overflow-y-scroll">
+      <div className="lg:columns-2 px-8 py-20 gap-8 max-w-6xl mx-auto relative h-full ">
         <h1 className="flex font-bold text-5xl lg:text-7xl leading-[52px] lg:leading-[60px]">
           info
         </h1>
-        <div className="flex flex-col gap-4 text-2xl lg:text-4xl leading-6 lg:leading-8 font-thin">
+        <div className="flex flex-col gap-4 text-2xl lg:text-3xl leading-6 lg:leading-8 font-thin">
           {paragraphs.map((paragraph, i) => {
             return (
               <p className="break-words" key={i}>

@@ -21,12 +21,15 @@ module.exports = {
       mbOrange: "#FF4C00",
       wilma1: "#9381FF",
       wilma2: "#FF84E8",
+      dwred: "#FF0000",
     },
     extend: {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
         ibm: ["IBM Plex Mono", "monospace"],
         grotesk: ["Space Grotesk", "sans-serif"],
+
+        hubot: ["Hubot-Sans", "sans-serif"],
       },
       backgroundImage: {
         confetti: "url('../public/wilma/confetti.webp')",

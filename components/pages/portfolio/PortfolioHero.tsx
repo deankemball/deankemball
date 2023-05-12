@@ -17,7 +17,7 @@ const projects = [
   },
   {
     title: "deanwallflower",
-    link: "https://deanwallflower.vercel.app/",
+    link: "/portfolio/deanwallflower",
     type: "new media artist portfolio",
     year: "2023",
     icon: MusicVideo,
