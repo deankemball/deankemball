@@ -34,6 +34,7 @@ const SectionFrames = ({
                   alt={`wilma-${i}`}
                   src={Frame}
                   placeholder="empty"
+                  loading="eager"
                   // width={isSmallScreen ? "100vw" : "100%"}
                   // height={isSmallScreen ? "70vh" : "800%"}
                   className="rounded-md"

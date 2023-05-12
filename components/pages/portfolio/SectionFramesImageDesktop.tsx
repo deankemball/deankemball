@@ -36,6 +36,7 @@ const SectionFrames = ({
                   alt={`${project}-${i}`}
                   src={Frame}
                   placeholder="empty"
+                  loading="eager"
                   // width={"100vw"}
                   // height={isSmallScreen ? "70vh" : "800%"}
                   className="rounded-md h-full w-screen flex flex-1"

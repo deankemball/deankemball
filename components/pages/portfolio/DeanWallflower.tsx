@@ -46,7 +46,7 @@ const useDeviceSize = () => {
 const Logo = () => {
   return (
     <div className="font-hubot flex flex-1 mx-auto flex-col justify-center items-center lg:-ml-40">
-      <h1 className="flex flex-col shadow-lg lg:shadow-xl xl:shadow-2xl text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black italic border-dashed border-[2px] md:border-[3px] lg:border-3 xl:border-4 border-white bg-black/40 pl-4 pr-20 py-4">
+      <h1 className="flex flex-col shadow-lg lg:shadow-xl xl:shadow-2xl text-4xl md:text-7xl lg:text-7xl xl:text-9xl font-black italic border-dashed border-[2px] md:border-[3px] lg:border-3 xl:border-4 border-white bg-black/40 pl-4 pr-20 py-4">
         <span className="-mb-3 lg:-mb-5 xl:-mb-7">dean</span>
         <span>wallflower</span>
       </h1>
