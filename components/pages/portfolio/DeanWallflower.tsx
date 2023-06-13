@@ -92,7 +92,7 @@ const Wilma = () => {
           bgColor={"bg-black"}
           textColor={"text-white"}
           paragraphs={paragraphs}
-          link="https://www.kultourkutsche.de/"
+          link="https://deanwallflower.vercel.app/"
         />
       </div>
     </>
