@@ -21,7 +21,7 @@ const paragraphs = [
   "it is inspired by desktop operating systems.",
   "therefore it is a desktop-first site, however it is responsive and also works all devices.",
   "the main features are full screen video backgrounds, and UI elements that are toggled on and off with the associated links.",
-  "the UI elements have a transparent background. the idea is that you can continue watching the video while you explore the site, or even contat me the contact form, which is a draggable element.",
+  "the UI elements have a transparent background. the idea is that you can continue watching the video while you explore the site, or even contact me via the form, which is a draggable element.",
   "upcoming features include adding custom video controls to pause and play the video, and a timeline seekking feature.",
 ];
 
