@@ -2,7 +2,6 @@ import React from "react";
 import Left from "../../../public/icons/left.svg";
 import Right from "../../../public/icons/right.svg";
 import clsx from "clsx";
-import Link from "next/link";
 
 interface SectionInfoProps {
   bgColor: string;
@@ -42,13 +41,11 @@ const SectionInfo = ({
           <div className="text-7xl">
             <Right />
           </div>
-          <Link href={link}>
-            <a>
-              <h1 className="font-bold text-5xl xl:text-7xl leading-[52px] lg:leading-[60px] underline underline-offset-4 decoration-4">
-                link
-              </h1>
-            </a>
-          </Link>
+          <a href={link} target="_blank" rel="noreferrer">
+            <h1 className="font-bold text-5xl xl:text-7xl leading-[52px] lg:leading-[60px] underline underline-offset-4 decoration-4">
+              link
+            </h1>
+          </a>
           <div className="text-7xl invisible">
             <Left />
           </div>

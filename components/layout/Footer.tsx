@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import ThemeSwitch from "./ThemeSwitch";
 import clsx from "clsx";
 
-export const menuItems = ["home", "about", "portfolio", "contact"];
+export const menuItems = ["about", "portfolio", "contact"];
 
 interface FooterProps {
   setSelected: Function;
@@ -23,7 +23,7 @@ export default function Footer({
           className="font-inter font-regular tracking-wide text-2xl md:text-3xl lg:text-4xl text-right"
           key={i}
         >
-          <Link href={item === "home" ? "/" : `/${item}`}>
+          <Link href={`/${item}`}>
             <a
               onClick={() => setSelected(item)}
               className={clsx(

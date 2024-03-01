@@ -31,7 +31,7 @@ const projects = [
   },
   {
     title: "cell-dodger",
-    link: "https://cell-dodger.vercel.app/",
+    link: "/portfolio/cell-dodger",
     type: "online game project",
     year: "2022",
     icon: Game,

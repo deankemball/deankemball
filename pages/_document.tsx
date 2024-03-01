@@ -11,7 +11,7 @@ class SpecialDocument extends Document {
             href="Hubot-Sans.woff2"
             as="font"
             type="font/woff2"
-            crossOrigin="true"
+            // crossOrigin="true
           ></link>
         </Head>
         <body className="bg-white text-black dark:bg-black dark:text-white transition-colors duration-500">

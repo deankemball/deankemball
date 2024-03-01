@@ -42,6 +42,7 @@ const SectionFrames = ({
                   className="rounded-md h-full w-screen flex flex-1"
                   // objectFit="cover"
                   // objectFit=""
+                  objectFit="scale-down"
                 />
               </div>
             );

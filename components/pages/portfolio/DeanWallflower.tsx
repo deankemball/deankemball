@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import WilmaLogo from "../../../public/deanwallflower/wilma-logo.webp";
 import Frame1 from "../../../public/deanwallflower/dw-1.webp";
 import Frame2 from "../../../public/deanwallflower/dw-2.webp";
 import Frame3 from "../../../public/deanwallflower/dw-3.webp";
@@ -13,7 +12,6 @@ import Frame10 from "../../../public/deanwallflower/dw-6.webp";
 import Section1 from "./Section1";
 import SectionInfo from "./SectionInfo";
 import SectionFramesImageDesktop from "./SectionFramesImageDesktop";
-import Image from "next/image";
 
 const paragraphs = [
   "deanwallflower is my visual arts project.",
@@ -54,7 +52,7 @@ const Logo = () => {
   );
 };
 
-const Wilma = () => {
+const DeanWallflower = () => {
   const isSmallScreen: boolean = useDeviceSize() < 1024;
 
   return (
@@ -99,4 +97,4 @@ const Wilma = () => {
   );
 };
 
-export default Wilma;
+export default DeanWallflower;

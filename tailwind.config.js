@@ -22,6 +22,8 @@ module.exports = {
       wilma1: "#9381FF",
       wilma2: "#FF84E8",
       dwred: "#FF0000",
+      cdodger1: "#141414",
+      cdodger2: "#292929",
     },
     extend: {
       fontFamily: {

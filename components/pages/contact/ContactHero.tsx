@@ -5,11 +5,11 @@ import Github from "../../../public/contact/github.svg";
 import ContactMethod from "./ContactMethod";
 
 const contactMethods = {
-  discord: {
-    link: "https://discordapp.com/users/729637167151710298",
-    icon: Discord,
-    handle: "@deankemball",
-  },
+  // discord: {
+  //   link: "https://discordapp.com/users/729637167151710298",
+  //   icon: Discord,
+  //   handle: "@deankemball",
+  // },
   github: {
     link: "https://github.com/deankemball",
     icon: Github,
