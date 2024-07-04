@@ -6,8 +6,16 @@ import Game from "../../../public/icons/game.svg";
 import Camera from "../../../public/icons/camera.svg";
 import MusicVideo from "../../../public/icons/musicVideo.svg";
 import Bus from "../../../public/icons/bus.svg";
+import Party from "../../../public/icons/party.svg";
 
 const projects = [
+  {
+    title: "transcentury update",
+    link: "/portfolio/transcentury-update",
+    type: "music festival",
+    year: "2024",
+    icon: Party,
+  },
   {
     title: "wilma",
     link: "/portfolio/wilma",

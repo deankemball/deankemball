@@ -42,7 +42,7 @@ const SectionInfo = ({
             <Right />
           </div>
           <a href={link} target="_blank" rel="noreferrer">
-            <h1 className="font-bold text-5xl xl:text-7xl leading-[52px] lg:leading-[60px] underline underline-offset-4 decoration-4">
+            <h1 className="mt-2 font-bold text-5xl xl:text-7xl leading-[52px] lg:leading-[60px] underline underline-offset-4 decoration-4">
               link
             </h1>
           </a>
