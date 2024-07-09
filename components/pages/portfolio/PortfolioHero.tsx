@@ -10,7 +10,7 @@ import Party from "../../../public/icons/party.svg";
 
 const projects = [
   {
-    title: "transcentury update",
+    title: <span>transcentury<br/>update</span>,
     link: "/portfolio/transcentury-update",
     type: "music festival",
     year: "2024",
@@ -37,20 +37,6 @@ const projects = [
     year: "2022",
     icon: Fire,
   },
-  {
-    title: "cell-dodger",
-    link: "/portfolio/cell-dodger",
-    type: "online game project",
-    year: "2022",
-    icon: Game,
-  },
-  {
-    title: "recipe app",
-    link: "/portfolio/recipeapp",
-    type: "ui/ux mockup",
-    year: "2022",
-    icon: Carrot,
-  },
 ];
 
 const Portfolio = () => {
@@ -59,7 +45,7 @@ const Portfolio = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 row-autu gap-4 md:gap-4">
         {projects.map((project, i) => {
           return (
-            <div key={project.title} className="flex flex-col gap-2 h-full">
+            <div key={project.link} className="flex flex-col gap-2 h-full">
               <Link key={i} href={project.link}>
                 <a
                   target={project.link.includes("http") ? "_blank" : ""}
@@ -71,7 +57,7 @@ const Portfolio = () => {
                         {project.year}
                       </p>
                       <div className="flex gap-2 align-middle group">
-                        <div className="text-2xl group-hover:text-red group-hover:dark:text-red transition-colors md:text-3xl lg:text-4xl flex items-end justify-start">
+                        <div className="text-2xl self-start group-hover:text-red group-hover:dark:text-red transition-colors md:text-3xl lg:text-4xl flex items-end justify-start">
                           {<project.icon />}
                         </div>
                         <p className="text-2xl group-hover:text-red group-hover:dark:text-red transition-colors md:text-3xl lg:text-4xl decoration-red underline underline-offset-2">

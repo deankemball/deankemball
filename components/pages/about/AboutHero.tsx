@@ -19,14 +19,12 @@ function AboutHero() {
       </motion.div>
       <div className="flex flex-col gap-[24px] md:gap-[28px] lg:gap-[32px]">
         <p>
-          I draw on my diverse background in{" "}
-          <em>photography, motion graphics, and illustration</em> to create
-          compelling web experiences.{" "}
+        I am full-stack developer capable of designing, implementing, and deploying content-managed websites that are that are modern, user-friendly, and fast. 
         </p>
-        <p>
-          I aim to specialise in making interactive and unique portfolio
-          websites for artists and creatives.
-        </p>
+        {/* <p>
+          I specialize in making interactive and unique portfolio
+          websites for artists and creatives. */}
+        {/* </p> */}
         <p>
           {`In my spare time, I am programming and performing real-time
           audio-reactive visuals at punk shows in my city. See `}
