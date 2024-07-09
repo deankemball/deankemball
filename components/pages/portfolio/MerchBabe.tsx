@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { SVGProps, useEffect, useState } from "react";
 import Frame1 from "../../../public/merchbabe/frame1.svg";
 import Frame2 from "../../../public/merchbabe/frame2.svg";
 import Frame3 from "../../../public/merchbabe/frame3.svg";
@@ -9,10 +9,12 @@ import Frame7 from "../../../public/merchbabe/frame7.svg";
 import Frame8 from "../../../public/merchbabe/frame8.svg";
 import Frame9 from "../../../public/merchbabe/frame9.svg";
 import Frame10 from "../../../public/merchbabe/frame10.svg";
-import { framesType } from "./RecipeApp";
 import SectionFrames from "./SectionFrames";
 import Section1 from "./Section1";
 import SectionInfo from "./SectionInfo";
+
+export type framesType = (props: SVGProps<SVGSVGElement>) => JSX.Element;
+
 
 const frames1: framesType[] = [
   (props) => <Frame1 {...props} />,

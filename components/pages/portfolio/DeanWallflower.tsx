@@ -8,7 +8,7 @@ import Frame6 from "../../../public/deanwallflower/dw-6.webp";
 import Frame7 from "../../../public/deanwallflower/dw-7.webp";
 import Frame8 from "../../../public/deanwallflower/dw-8.webp";
 import Frame9 from "../../../public/deanwallflower/dw-9.webp";
-import Frame10 from "../../../public/deanwallflower/dw-6.webp";
+import Frame10 from "../../../public/deanwallflower/dw-10.webp";
 import Section1 from "./Section1";
 import SectionInfo from "./SectionInfo";
 import SectionFramesImageDesktop from "./SectionFramesImageDesktop";
@@ -83,6 +83,12 @@ const DeanWallflower = () => {
         <SectionFramesImageDesktop
           bgColor={"bg-dwred"}
           frames={frames2}
+          isSmallScreen={isSmallScreen}
+          project="deanwallflower"
+        />
+        <SectionFramesImageDesktop
+          bgColor={"bg-black"}
+          frames={frames3}
           isSmallScreen={isSmallScreen}
           project="deanwallflower"
         />

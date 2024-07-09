@@ -1,6 +1,5 @@
 import React from "react";
 import clsx from "clsx";
-import { framesType } from "./RecipeApp";
 import { StaticImageData } from "next/image";
 import Image from "next/image";
 
