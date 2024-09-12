@@ -42,7 +42,7 @@ const projects = [
 const Portfolio = () => {
   return (
     <div className="flex flex-col items-center font-inter">
-      <div className="grid grid-cols-1 md:grid-cols-2 row-autu gap-4 md:gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 row-autu gap-4 md:gap-8">
         {projects.map((project, i) => {
           return (
             <div key={project.link} className="flex flex-col gap-2 h-full">

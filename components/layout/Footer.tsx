@@ -17,7 +17,7 @@ export default function Footer({
   selected,
 }: FooterProps): JSX.Element {
   return (
-    <div>
+    <div className="flex flex-col md:gap-1">
       {menuItems.map((item, i) => (
         <div
           className="font-inter font-regular tracking-wide text-2xl md:text-3xl lg:text-4xl text-right"

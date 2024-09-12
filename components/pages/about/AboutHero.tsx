@@ -15,6 +15,8 @@ function AboutHero() {
           src={Avatar}
           alt="dean kemball skull with sunglasses avatar"
           className="invert dark:invert-0 transition-colors scale-[70%] md:scale-75 lg:scale-125"
+          priority
+          loading="eager"
         />
       </motion.div>
       <div className="flex flex-col gap-[24px] md:gap-[28px] lg:gap-[32px]">

@@ -25,7 +25,7 @@ const contactMethods = {
 function ContactHero() {
   return (
     <div className="flex min-w-screen flex-col justify-between py-6 items-center">
-      <div className="flex-col space-y-2">
+      <div className="flex flex-col space-y-2 md:space-y-4">
         <>
           {Object.values(contactMethods).map((contact, i) => {
             return (
