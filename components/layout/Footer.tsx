@@ -28,8 +28,10 @@ export default function Footer({
               onClick={() => setSelected(item)}
               className={clsx(
                 "transition-colors",
-                selected === "portfolioDemo"
-                  ? "text-white decoration-white opacity-50 hover:opacity-100 underline underline-offset-2 transition-colors duration-150"
+                selected === "portfolioDemo" 
+              ? "text-white decoration-white opacity-50 hover:opacity-100 transition-colors select-none -space-y-2 text-2xl md:text-3xl lg:text-4xl cursor-pointer" :
+              selected === 'stick-and-choke' ? 
+              'text-black decoration-black opacity-50 hover:opacity-100 transition-colors select-none -space-y-2 text-2xl md:text-3xl lg:text-4xl cursor-pointer'
                   : selected === item && selected != "home"
                   ? "text-red decoration-red underline underline-offset-2"
                   : "decoration-red hover:text-red underline underline-offset-2"

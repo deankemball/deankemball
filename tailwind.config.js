@@ -24,6 +24,9 @@ module.exports = {
       dwred: "#FF0000",
       cdodger1: "#141414",
       cdodger2: "#292929",
+      paper: '#F5F1F0',
+      yellow: '#FBFFDD',
+      purple: "#7261e9",
     },
     extend: {
       fontFamily: {

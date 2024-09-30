@@ -11,9 +11,11 @@ function Header({ selected }: HeaderProps) {
       <a>
         <div
           className={clsx(
-            "z-50",
+            "z-[99]",
             selected === "portfolioDemo"
-              ? "text-white decoration-white opacity-50 hover:opacity-100 transition-colors select-none -space-y-2 text-2xl md:text-3xl lg:text-4xl cursor-pointer"
+              ? "text-white decoration-white opacity-50 hover:opacity-100 transition-colors select-none -space-y-2 text-2xl md:text-3xl lg:text-4xl cursor-pointer" :
+              selected === 'stick-and-choke' ? 
+              'text-black decoration-black opacity-50 hover:opacity-100 transition-colors select-none -space-y-2 text-2xl md:text-3xl lg:text-4xl cursor-pointer'
               : "text-black dark:text-white hover:text-red dark:hover:text-red transition-colors select-none -space-y-2 text-2xl md:text-3xl lg:text-4xl cursor-pointer underline decoration-red"
           )}
         >

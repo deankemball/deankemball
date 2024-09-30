@@ -18,7 +18,7 @@ export default function Layout({ children }: any) {
       router.pathname.split("/").length === 3 &&
       router.pathname.includes("portfolio")
     ) {
-      setSelected("portfolioDemo");
+      setSelected(router.pathname.includes("stick-and-choke") ? "stick-and-choke" : "portfolioDemo");
     } else if (router.pathname.split("/").length === 2) {
       setSelected(router.pathname.split("/")[1]);
     }
@@ -35,7 +35,7 @@ export default function Layout({ children }: any) {
           dark: "dark",
         }}
       >
-        <div className="min-h-screen w-screen bg-white dark:bg-black flex-col flex justify-between z-50 relative scrollbar-hide">
+        <div className="min-h-screen w-screen bg-white dark:bg-black flex-col flex justify-between z-[99] relative scrollbar-hide">
           {selected === "portfolioDemo" && (
             <BackButton link={"/portfolio"} selected={selected} />
           )}
