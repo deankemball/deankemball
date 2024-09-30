@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["netlify.app", "deankemball.netlify.app"],
+    domains: ["netlify.app", "deankemball.netlify.app", "deankemball.com"],
   },
   reactStrictMode: true,
   webpack(config) {

@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import BackButton from "./BackButton";
 import { Analytics } from "@vercel/analytics/react"
+import { Toaster } from "@/components/ui/toaster"
 
 export default function Layout({ children }: any) {
   const router = useRouter();
@@ -39,10 +40,10 @@ export default function Layout({ children }: any) {
           {selected === "portfolioDemo" && (
             <BackButton link={"/portfolio"} selected={selected} />
           )}
-          <div className="flex-col space-y-2 fixed left-8 top-6">
+          <div className="flex-col space-y-2 fixed left-8 top-6 z-[99]">
             <Header selected={selected} />
           </div>
-          <div className="fixed left-8 bottom-6">
+          <div className="fixed left-8 bottom-6 z-50">
             <ThemeSwitch selected={selected} />
           </div>
 
@@ -54,6 +55,7 @@ export default function Layout({ children }: any) {
           </div>
         </div>
         <Analytics />
+        <Toaster />
       </ThemeProvider>
     </>
   );

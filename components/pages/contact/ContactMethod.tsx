@@ -7,18 +7,45 @@ interface ContactmeMethodProps {
   handle: string;
 }
 
+import { useToast } from "@/hooks/use-toast"
+
+
+
 const ContactMethod = ({ link, icon, handle }: ContactmeMethodProps) => {
-  return (
-    <Link href={link}>
-      <a>
+  const {toast} = useToast()
+
+  function updateClipboard(newClip: string) {
+    navigator.clipboard.writeText(newClip).then(
+      () => {
+        toast({
+          title: 'E-mail Address copied to clipboard'
+          //   description: result.message,
+        })
+      },
+      () => {
+        toast({
+          title: 'Try again.'
+          //   description: result.message,
+        })
+      },
+    )
+  }
+  
+      {return link.includes('@') ? (
+      <button onClick={()=>updateClipboard('deankemball@gmail.com')} className="flex justify-between space-x-2 items-center hover:text-red dark:hover:text-red transition-colors">
+        <span className="text-2xl md:text-3xl lg:text-4xl">{icon}</span>
+          <span className="flex flex-grow bg-red h-[2px] md:h-[3px] lg:h-1 w-4"></span>
+          <span className="text-2xl md:text-3xl lg:text-4xl">{handle}</span>
+      </button>) :  
+     ( 
+     <a href={link}>
         <div className="flex justify-between space-x-2 items-center hover:text-red dark:hover:text-red transition-colors">
           <div className="text-2xl md:text-3xl lg:text-4xl">{icon}</div>
           <div className="flex flex-grow bg-red h-[2px] md:h-[3px] lg:h-1 w-4"></div>
           <div className="text-2xl md:text-3xl lg:text-4xl">{handle}</div>
         </div>
       </a>
-    </Link>
-  );
+      )}
 };
 
 export default ContactMethod;

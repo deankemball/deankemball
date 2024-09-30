@@ -1,3 +1,5 @@
+import "../styles/globals.css";
+import "../src/index.css";
 import { NextPage } from "next";
 import type { AppProps } from "next/app";
 import {
@@ -7,9 +9,7 @@ import {
   useEffect,
   useState,
 } from "react";
-import "../src/index.css";
-import { motion, useUnmountEffect } from "framer-motion";
-import { Router } from "next/router";
+import { motion } from "framer-motion";
 import { menuItems } from "../components/layout/Footer";
 
 export type NextPageWithLayout = NextPage & {
