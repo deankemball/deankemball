@@ -5,7 +5,7 @@ import ThemeSwitch from "./ThemeSwitch";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import BackButton from "./BackButton";
-// import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Layout({ children }: any) {
   const router = useRouter();
@@ -53,7 +53,7 @@ export default function Layout({ children }: any) {
             <Footer setSelected={setSelected} selected={selected} />
           </div>
         </div>
-        {/* <Analytics /> */}
+        <Analytics />
       </ThemeProvider>
     </>
   );
