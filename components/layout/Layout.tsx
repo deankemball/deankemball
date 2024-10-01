@@ -25,6 +25,8 @@ export default function Layout({ children }: any) {
     }
   }, [router]);
 
+  
+
   return (
     <>
       <ThemeProvider
