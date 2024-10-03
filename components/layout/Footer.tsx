@@ -1,11 +1,7 @@
-import { useTheme } from "next-themes";
 import Link from "next/link";
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
-import ThemeSwitch from "./ThemeSwitch";
 import clsx from "clsx";
 
-export const menuItems = ["about", "skills", "portfolio", "contact"];
+export const menuItems = ["about", "services", , "portfolio", "contact", "skills"];
 
 interface FooterProps {
   setSelected: Function;

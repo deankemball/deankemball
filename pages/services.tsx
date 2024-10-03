@@ -2,17 +2,17 @@ import { ReactElement } from "react";
 import Layout from "../components/layout/Layout";
 import type { NextPageWithLayout } from "./_app";
 import Head from "next/head";
-import SkillsHero from "../components/pages/skills/SkillsHero";
+import ServicesHero from "components/pages/services/ServicesHero";
 
-const Skills: NextPageWithLayout = () => {
-  return <SkillsHero />;
+const Services: NextPageWithLayout = () => {
+  return <ServicesHero />;
 };
 
-Skills.getLayout = function getLayout(page: ReactElement) {
+Services.getLayout = function getLayout(page: ReactElement) {
   return (
     <Layout>
       <Head>
-      <title>Dean Kemball—Skills</title>
+      <title>Dean Kemball—Services</title>
       <meta name="description" content="Dean Kemball is a freelance Web Designer & Developer" />
       <meta></meta>
       </Head>
@@ -23,4 +23,4 @@ Skills.getLayout = function getLayout(page: ReactElement) {
   );
 };
 
-export default Skills;
+export default Services;

@@ -1,11 +1,8 @@
-import Image from "next/image";
-import Avatar from "/public/about/dean-kemball-avatar-filled-3.png";
 import { motion } from "framer-motion";
 import MarqueeItem from "components/marquee";
 import { Dispatch, ReactElement, SetStateAction, useEffect, useState } from "react";
 import {XIcon} from 'lucide-react'
 import mod from "@/lib/mod";
-import clsx from "clsx";
 import Left from '../../../public/icons/left.svg'
 import Right from '../../../public/icons/right.svg'
 
