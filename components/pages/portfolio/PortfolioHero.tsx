@@ -69,7 +69,7 @@ const Portfolio = () => {
   return (
     <div className="flex flex-col gap-4">
       <div className="flex w-full justify-center items-center gap-4 md:gap-8 px-8 md:px-0">
-        <div className="flex flex-col gap-4 md:gap-8 w-full max-w-xl h-[576px] min-h-[576px]">
+        <div className="flex flex-col gap-4 md:gap-8 w-full max-w-xl md:h-[576px] md:min-h-[576px]">
           {projects.slice(pageNo * projectsPerPage, pageNo * projectsPerPage + projectsPerPage).map((project, i) => (
             <div key={project.link} className="flex flex-col gap-2 h-full w-full">
               <Link key={i} href={project.link}
