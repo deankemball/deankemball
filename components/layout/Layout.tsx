@@ -7,6 +7,8 @@ import { useEffect, useState } from "react";
 import BackButton from "./BackButton";
 import { Analytics } from "@vercel/analytics/react"
 import { Toaster } from "@/components/ui/toaster"
+import clsx from "clsx";
+import { montserrat } from "pages/_app";
 
 export default function Layout({ children }: any) {
   const router = useRouter();
@@ -41,7 +43,7 @@ export default function Layout({ children }: any) {
           dark: "dark",
         }}
       >
-        <div className="min-h-screen w-screen bg-white dark:bg-black flex-col flex justify-between z-[99] relative scrollbar-hide">
+        <div className={clsx(montserrat.className, "min-h-screen w-screen bg-white dark:bg-black flex-col flex justify-between z-[99] relative scrollbar-hide")}>
           {showBackButton && (
             <BackButton link={"/portfolio"} selected={selected} />
           )}

@@ -28,8 +28,7 @@ function AboutHero() {
           websites for artists and creatives. */}
         {/* </p> */}
         <p>
-          {`In my spare time, I am performing real-time
-          audio-reactive visuals at punk shows in my city. See `}
+          {`In my spare time, I am performing live visuals at punk shows in my city. See `}
           <span className="decoration-red hover:text-red underline underline-offset-2 transition-colors">
             <Link href="/portfolio">{`deanwallflower`}</Link>
           </span>

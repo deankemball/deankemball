@@ -80,17 +80,17 @@ const Portfolio = () => {
                       <div className="text-3xl h-full group-hover:text-red group-hover:dark:text-red transition-colors md:text-3xl lg:text-4xl flex">
                             {<project.icon />}
                           </div>
-                          <p className="font-light text-black/50 dark:text-white/50 text-sm md:text-md lg:text-lg leading-none -mb-1 md:-mb-[6px] lg:-mb-2 transition-colors">
+                          <p className="text-black/50 dark:text-white/50 text-sm md:text-md lg:text-lg leading-none -mb-1 md:-mb-[6px] lg:-mb-2 transition-colors">
                           {project.year}
                         </p>
                     </div>
                       <div className="flex flex-col">
                         <div className="flex gap-2 align-middle group self-end text-right w-full justify-between">
-                          <p className="text-2xl group-hover:text-red group-hover:dark:text-red transition-colors md:text-3xl lg:text-4xl decoration-red underline underline-offset-2 w-full">
+                          <p className="text-2xl font-medium group-hover:text-red group-hover:dark:text-red transition-colors md:text-3xl lg:text-4xl decoration-red underline underline-offset-2 w-full">
                             {project.title}
                           </p>
                         </div>
-                        <p className="w-fit ml-auto text-right font-light text-xl md:text-2xl lg:text-3xl leading-5 md:leading-6 lg:leading-7">
+                        <p className="w-fit ml-auto text-right text-xl md:text-2xl lg:text-3xl leading-5 md:leading-6 lg:leading-7">
                           {project.type}
                         </p>
                       </div>

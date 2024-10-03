@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 import { Montserrat } from 'next/font/google'
 import clsx from "clsx";
  
-const montserrat = Montserrat({ subsets: ['latin'] })
+export const montserrat = Montserrat({ subsets: ['latin'] })
 
 export type NextPageWithLayout = NextPage & {
   getLayout?: (page: ReactElement) => ReactNode;

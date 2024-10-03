@@ -23,7 +23,7 @@ export default function Footer({
           <Link href={`/${item}`}
               onClick={() => setSelected(item)}
               className={clsx(
-                "transition-colors z-[99]",
+                "transition-colors z-[99] font-medium",
                 selected === 'stick-and-choke' || selected === 'transcentury-update' ? 
                 'text-black decoration-black opacity-50 hover:opacity-100 transition-colors select-none -space-y-2 text-2xl md:text-3xl lg:text-4xl cursor-pointer'
               :  selected === "portfolioDemo" 

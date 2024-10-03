@@ -30,7 +30,7 @@ class SpecialDocument extends Document {
         <meta property="og:site_name" content="deankemball.com" />
         <meta
           property="og:image"
-          content={`${siteUrl}og.png`}
+          content={`${siteUrl}og.jpg`}
         />
         <link rel="canonical" href="https://deankemball.com/" />
         <meta property="og:image:width" content="1200" />

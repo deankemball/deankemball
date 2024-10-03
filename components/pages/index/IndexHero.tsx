@@ -19,7 +19,7 @@ function IndexHero() {
         },
       }}
     >
-      <div className=" text-center tracking-wide">
+      <div className="text-center tracking-wide">
         <p className="font-medium text-6xl md:text-8xl">
           full stack<br></br> developer
         </p>
