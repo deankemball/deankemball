@@ -5,7 +5,7 @@ import Link from "next/link";
 
 function AboutHero() {
   return (
-    <div className="font-inter text-xl md:text-2xl lg:text-3xl flex flex-col lg:flex-row mx-auto select-none w-full max-w-[19rem] md:max-w-[23rem] lg:max-w-[840px] leading-6 md:leading-7 lg:items-center lg:-translate-x-10 gap-8 md:gap-8 z-50">
+    <div className="font-inter text-xl md:text-2xl lg:text-3xl flex flex-col lg:flex-row mx-auto select-none w-full max-w-md leading-6 md:leading-7 lg:items-center lg:-translate-x-10 gap-8 md:gap-8 z-50">
       <motion.div
         animate={{ rotate: [-1, 0, -1], y: [-4, 0, -4] }}
         transition={{ ease: "easeInOut", duration: 2, repeat: Infinity }}
