@@ -38,7 +38,7 @@ const ContactMethod = ({ link, icon, handle }: ContactmeMethodProps) => {
           <span className="text-xl md:text-3xl lg:text-4xl">{handle}</span>
       </button>) :  
      ( 
-     <a href={link}>
+     <a href={link} target="_blank" rel="noopener noreferrer">
         <div className="flex justify-between space-x-2 items-center hover:text-red dark:hover:text-red transition-colors">
           <div className="text-xl md:text-3xl lg:text-4xl">{icon}</div>
           <div className="flex flex-grow bg-red h-[2px] md:h-[3px] lg:h-1 w-4"></div>
