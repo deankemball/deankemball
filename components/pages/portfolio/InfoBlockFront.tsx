@@ -8,7 +8,7 @@ interface InfoBlockFrontProps {
 
 const InfoBlockFront = ({ type, title, description }: InfoBlockFrontProps) => {
   return (
-    <div className="flex flex-col w-full max-w-7xl gap-4 text-center items-center">
+    <div className="flex flex-col w-full px-8 md:px-0 max-w-7xl gap-4 text-center items-center">
       {/* <p className="text-md lg:text-xl">
         {type}
       </p> */}
