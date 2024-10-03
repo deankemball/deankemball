@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import ThemeSwitch from "./ThemeSwitch";
 import clsx from "clsx";
 
-export const menuItems = ["about", "portfolio", "contact"];
+export const menuItems = ["about", "skills", "portfolio", "contact"];
 
 interface FooterProps {
   setSelected: Function;

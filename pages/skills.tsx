@@ -2,13 +2,13 @@ import { ReactElement } from "react";
 import Layout from "../components/layout/Layout";
 import type { NextPageWithLayout } from "./_app";
 import Head from "next/head";
-import AboutHero from "../components/pages/about/AboutHero";
+import SkillsHero from "../components/pages/skills/SkillsHero";
 
-const About: NextPageWithLayout = () => {
-  return <AboutHero />;
+const Skills: NextPageWithLayout = () => {
+  return <SkillsHero />;
 };
 
-About.getLayout = function getLayout(page: ReactElement) {
+Skills.getLayout = function getLayout(page: ReactElement) {
   return (
     <Layout>
       <Head>
@@ -23,4 +23,4 @@ About.getLayout = function getLayout(page: ReactElement) {
   );
 };
 
-export default About;
+export default Skills;

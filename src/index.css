@@ -25,3 +25,25 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+#skills > p > a {
+  text-decoration: underline;
+  text-decoration-color: #EF3E36;
+}
+
+#skills > p > a:hover {
+  color: #EF3E36;
+}
+
+#skills > p {
+  position: relative;
+  padding-left: 20px; /* Add space for the bullet */
+}
+
+#skills > p::before {
+  content: "•"; /* Unicode for bullet point */
+  position: absolute;
+  left: 0;
+  top: -2px;
+  font-size: 2rem; /* Adjust bullet size if necessary */
+}
