@@ -16,7 +16,7 @@ Services.getLayout = function getLayout(page: ReactElement) {
       <meta name="description" content="Dean Kemball is a freelance Web Designer & Developer" />
       <meta></meta>
       </Head>
-      <main className="h-screen w-screen flex flex-col justify-center px-8 self-center m-auto pb-16 overscroll-none">
+      <main className="h-screen w-screen flex flex-col justify-center px-8 self-center m-auto pb-16 md:pb-0 overscroll-none">
         {page}
       </main>
     </Layout>

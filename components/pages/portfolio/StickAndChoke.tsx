@@ -15,14 +15,14 @@ import Image from 'next/image'
 import StickLogo from '../../../public/stick/logo.png'
 
 const paragraphs = [
-  "stick & choke is a tattoo artist based in leipzig.",
-  "the website is a booking platform to maintain and manage potential client interactions.",
-  "it uses payload cms to allow the artist to maintain all website images, translations, faqs, travel plans etc.",
-  "there is a multi-step booking form which includes image upload, and allows for each step to be modified before submission.",
-  "there is a newsletter feature which allows potential clients to define which city they would like the artist to travel to.",
-  "the artist can announce where they plan to travel, which announces to all subscribers in that city of the upcoming trip.",
-  "it is fully responsive from mobile to desktop.",
-  "the design is bright, oversized and fun.",
+  "Stick & Choke is a Tattoo Artist based in Leipzig.",
+  "The website is a portfolio and booking platform to maintain and manage potential client interactions.",
+  "It uses Payload CMS to allow the artist to maintain all website images, translations, faqs, travel plans etc.",
+  "There is a multi-step booking form which includes image upload, and allows for each step to be modified before submission.",
+  "There is a newsletter feature which allows potential clients to define which city they would like the artist to travel to.",
+  "The artist can announce where they plan to travel, which announces to all subscribers in that city of the upcoming trip.",
+  "It is fully responsive from mobile to desktop.",
+  "The design is bright, oversized and fun.",
 ];
 
 const frames1 = [Frame1, Frame2, Frame3, Frame4, Frame5];
@@ -44,7 +44,7 @@ const useDeviceSize = () => {
 
 const Logo = () => {
   return (
-    <div className="w-[80vw] md:w-[40vw] flex items-center justify-center text-black"
+    <div className="w-full px-32 flex items-center justify-center text-black"
     >
     <Image src={StickLogo} alt='stick-and-choke-logo' />
     </div>
@@ -59,8 +59,8 @@ const StickAndChoke = () => {
       <div className="flex flex-col w-screen h-full">
         <Section1
           type={"client project:"}
-          title={"stick & choke"}
-          description={"Booking platform for Tattoo Artist."}
+          title={"Stick & Choke"}
+          description={"portfolio and booking platform for tattoo artist"}
           logo={
             <Logo />
           }

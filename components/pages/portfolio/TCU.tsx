@@ -15,12 +15,12 @@ import Image from "next/image";
 import TCULogo from '../../../public/tcu/TCU-Logo_2_Vektor.png'
 
 const paragraphs = [
-  'transcentury update is a music festival taking place in leipzig at several venues and over several days.',
-  'the platform is content managed using payload cms, where admins populate all of the data themselves.',
-  'through the cms, admins can create new venues, artists, festival dates, news articles and so on.',
-  'this allows the code base to be used for several years to come',
-  'there is a feature for building newsletter subscribers, including sending all relevant transactional emails.',
-  'the design is simple and lightweight, with oversized lettering and ui.'
+  'TransCentury Update is a music festival taking place in leipzig at several venues and over several days.',
+  'The platform is content managed using Payload CMS, where admins populate all of the data themselves.',
+  'Through the CMS, admins can create new venues, artists, festival dates, news articles and so on.',
+  'This allows the code base to be used for several years to come',
+  'There is a feature for building newsletter subscribers, including sending all relevant transactional emails.',
+  'The design is simple and lightweight, with oversized lettering and UI.'
 ];
 
 const frames1 = [Frame1, Frame2, Frame3];
@@ -61,7 +61,7 @@ const TCU = () => {
         <Section1
           type={"client project:"}
           title={"TransCentury Update"}
-          description={"A content managed platform for a music festival."}
+          description={"content managed anouncement platform for a music festival"}
           logo={
             <Logo />
           }

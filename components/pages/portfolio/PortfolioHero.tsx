@@ -16,13 +16,13 @@ import mod from "@/lib/mod";
 import clsx from "clsx";
 
 const projects = [
-  // {
-  //   title: 'stick & choke',
-  //   link: "/portfolio/stick-and-choke",
-  //   type: "tattoo artist",
-  //   year: "2024",
-  //   icon: Needle,
-  // },
+  {
+    title: 'stick & choke',
+    link: "/portfolio/stick-and-choke",
+    type: "tattoo artist",
+    year: "2024",
+    icon: Needle,
+  },
   // {
   //   title: 'post–organic bauplan',
   //   link: "/portfolio/post-organic-bauplan",
@@ -62,21 +62,19 @@ const projects = [
 
 const Portfolio = () => {
   const [pageNo, setPageNo] = useState(0);
-  const projectsPerPage = 4;
+  const projectsPerPage = 5;
   const totalPages = Math.ceil(projects.length / projectsPerPage);
   const LeftIcon = Left
   const RightIcon = Right
   return (
     <div className="flex flex-col gap-4">
-      <div className="flex w-full justify-center items-center font-inter gap-4 md:gap-8 px-8 md:px-0">
-       
-        <div className="grid grid-cols-1 row-auto gap-4 md:gap-8 w-full max-w-md">
+      <div className="flex w-full justify-center items-center gap-4 md:gap-8 px-8 md:px-0">
+        <div className="flex flex-col gap-4 md:gap-8 w-full max-w-xl h-[576px] min-h-[576px]">
           {projects.slice(pageNo * projectsPerPage, pageNo * projectsPerPage + projectsPerPage).map((project, i) => (
             <div key={project.link} className="flex flex-col gap-2 h-full w-full">
-              <Link key={i} href={project.link}>
-                <a
+              <Link key={i} href={project.link}
                   target={project.link.includes("http") ? "_blank" : ""}
-                  className="flex w-full justify-between"
+                  className="flex w-full justify-between group"
                 >
                     <div className="flex flex-col h-full justify-between">
                       <div className="text-3xl h-full group-hover:text-red group-hover:dark:text-red transition-colors md:text-3xl lg:text-4xl flex">
@@ -96,45 +94,44 @@ const Portfolio = () => {
                           {project.type}
                         </p>
                       </div>
-                </a>
               </Link>
             </div>
           ))}
+          {totalPages >= 2 ? 
+          <div className="flex gap-8 mx-auto items-center w-full justify-center z-50 md:justify-between">
+          <button
+                onClick={() => setPageNo(prev => mod(prev - 1, totalPages))}
+                // disabled={pageNo === 0}
+                className="transition-colors disabled:opacity-50 disabled:hover:text-inherit md:hover:text-red active:text-red text-4xl"
+              >
+              <LeftIcon />
+            </button>
+            {
+            [...new Array(2)].map((page, i)=>{
+              return (
+              <div 
+                key={`dot-${i}`} 
+                className={clsx(pageNo === i ? 'bg-red' : 
+                            'bg-black dark:bg-white', 
+                            "rounded-full w-4 h-4 transition-all cursor-pointer hover:md:scale-110 ease-in hidden md:block"
+                          )} 
+                onClick={()=>{
+                  setPageNo(i)
+                }}
+              />
+                )
+              })
+            }
+            <button
+                  onClick={() => setPageNo(prev => mod(prev + 1, totalPages))}
+                  // disabled={pageNo === totalPages - 1}
+                  className="transition-colors disabled:opacity-50 disabled:hover:text-inherit md:hover:text-red active:text-red text-4xl"
+                >
+                  <RightIcon />
+            </button>
+          </div> : null}
         </div>
-        
       </div>
-      {totalPages >= 2 ? <div className="fixed flex gap-8 mx-auto items-center w-full md:w-[480px] md:left-0 md:right-0 justify-center bottom-4 z-50 md:justify-between">
-      <button
-            onClick={() => setPageNo(prev => mod(prev - 1, totalPages))}
-            // disabled={pageNo === 0}
-            className="transition-colors disabled:opacity-50 disabled:hover:text-inherit md:hover:text-red active:text-red text-4xl"
-          >
-          <LeftIcon />
-        </button>
-        {
-        [...new Array(2)].map((page, i)=>{
-          return (
-          <div 
-            key={`dot-${i}`} 
-            className={clsx(pageNo === i ? 'bg-red' : 
-                        'bg-black dark:bg-white', 
-                        "rounded-full w-4 h-4 transition-all cursor-pointer hover:md:scale-110 ease-in hidden md:block"
-                      )} 
-            onClick={()=>{
-              setPageNo(i)
-            }}
-          />
-            )
-          })
-        }
-        <button
-              onClick={() => setPageNo(prev => mod(prev + 1, totalPages))}
-              // disabled={pageNo === totalPages - 1}
-              className="transition-colors disabled:opacity-50 disabled:hover:text-inherit md:hover:text-red active:text-red text-4xl"
-            >
-              <RightIcon />
-        </button>
-      </div> : null}
     </div>
   );
 };

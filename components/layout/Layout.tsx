@@ -11,6 +11,7 @@ import { Toaster } from "@/components/ui/toaster"
 export default function Layout({ children }: any) {
   const router = useRouter();
   const [selected, setSelected] = useState("");
+  const [showBackButton, setShowBackButton] = useState(false)
 
   useEffect(() => {
     if (router.pathname.split("/")[1] === "") {
@@ -19,13 +20,15 @@ export default function Layout({ children }: any) {
       router.pathname.split("/").length === 3 &&
       router.pathname.includes("portfolio")
     ) {
-      setSelected(router.pathname.includes("stick-and-choke") ? "stick-and-choke" : "portfolioDemo");
+      setSelected(router.pathname.includes("stick-and-choke") ? "stick-and-choke" : router.pathname.includes("transcentury-update") ? "transcentury-update" : "portfolioDemo");
     } else if (router.pathname.split("/").length === 2) {
       setSelected(router.pathname.split("/")[1]);
     }
   }, [router]);
 
-  
+  useEffect(() => {
+    setShowBackButton(selected === 'portfolioDemo' || selected === 'stick-and-choke' || selected === 'transcentury-update')
+  }, [selected]);
 
   return (
     <>
@@ -39,7 +42,7 @@ export default function Layout({ children }: any) {
         }}
       >
         <div className="min-h-screen w-screen bg-white dark:bg-black flex-col flex justify-between z-[99] relative scrollbar-hide">
-          {selected === "portfolioDemo" && (
+          {showBackButton && (
             <BackButton link={"/portfolio"} selected={selected} />
           )}
           <div className="flex-col space-y-2 fixed left-8 top-6 z-[99]">

@@ -15,7 +15,7 @@ Contact.getLayout = function getLayout(page: ReactElement) {
       <title>Dean Kemball—Contact</title>
       <meta name="description" content="Dean Kemball is a freelance Web Designer & Developer" />
       </Head>
-      <main className="h-screen flex flex-col justify-center self-center pb-16">
+      <main className="h-screen w-screen flex flex-col justify-center self-center pb-16 md:pb-0">
         {page}
       </main>
     </Layout>

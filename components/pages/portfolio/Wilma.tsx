@@ -12,11 +12,11 @@ import SectionFramesImage from "./SectionFramesImage";
 import Image from "next/image";
 
 const paragraphs = [
-  "wilma is a community culture and art project that aims to create a space for people to connect and learn together.",
-  "the main feature of the site is a calendar of upcoming events, with a modal to show more information.",
-  "it aims to be fun and modern without being too serious or childlike.",
-  "the background is a procedurally generated pattern, with colors matching the site.",
-  "upcoming features include internationalisation, and a gallery page which uses the instagram api to display their recent posts.",
+  "Wilma is a community culture and art project that aims to create a space for people to connect and learn together.",
+  "The main feature of the site is a calendar of upcoming events, with a modal to show more information.",
+  "It aims to be fun and modern without being too serious or childlike.",
+  "The background is a procedurally generated pattern, with colors matching the site.",
+  "Upcoming features include internationalisation, and a gallery page which uses the instagram api to display their recent posts.",
 ];
 
 const frames1 = [Frame1, Frame2, Frame3];
@@ -58,7 +58,7 @@ const Wilma = () => {
         <Section1
           type={"client project:"}
           title={"WILMA"}
-          description={"A landing page for a mobile socio-cultural project."}
+          description={"landing page for a mobile socio-cultural project"}
           logo={
             // <Logo
             //   className="-mt-12 md:mt-0"

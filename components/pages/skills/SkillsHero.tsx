@@ -133,7 +133,7 @@ const skills = [
 const IntroTile = ({setTileIndex}: {setTileIndex: Dispatch<SetStateAction<number>>}) => {
   return (
     <motion.div
-    className="mx-auto top-0 bottom-0 my-auto h-full max-h-[calc(100vw-64px)] w-full max-w-[calc(100vw-64px)] md:max-h-[448px] md:max-w-[448px] aspect-square flex justify-around flex-col z-20 overflow-hidden"
+    className="mx-auto top-0 bottom-0 my-auto h-full max-h-[calc(100vw-64px)] w-full max-w-[calc(100vw-64px)] md:max-h-[768px] md:max-w-xl aspect-square flex justify-around flex-col z-20 overflow-hidden"
       initial="pageInitial"
       animate="pageAnimate"
       exit="pageExit"
@@ -221,7 +221,7 @@ const SkillCard = ({tile, tileIndex, setTileIndex}: {tile: TileType, tileIndex: 
             },
           }}
         >
-    <div className="mx-auto top-0 bottom-0 my-auto h-full max-h-[calc(100vw-64px)] w-full max-w-[calc(100vw-64px)] md:max-h-[448px] md:max-w-[448px] aspect-square flex flex-col z-20 overflow-hidden gap-4">
+    <div className="mx-auto top-0 bottom-0 my-auto h-full max-h-[calc(100vw-64px)] w-full max-w-[calc(100vw-64px)] md:max-h-[768px] md:max-w-xl md:w-full aspect-square flex flex-col z-20 overflow-hidden gap-4">
       <div className="flex w-full justify-between items-center">
         <h1 className="text-2xl md:text-4xl underline decoration-red">{tile.title}</h1>
         <XIcon className="h-[32px] md:h-[36px] w-[32px] md:w-[36px] cursor-pointer hover:text-red transition-colors" onClick={()=>setTileIndex(0)} />

@@ -15,12 +15,12 @@ import Image from 'next/image'
 import POBLogo from '../../../public/pob/pob-logo.png'
 
 const paragraphs = [
-  "post-organic bauplan is a performance and research duo, combining dance and prosthesis.",
-  "the website is a portfolio of all of the performances, installations and video works.",
-  "it integrates three.js to display 3d models of the prostheses.",
-  "it features full screen videos and images.",
-  "it is fully responsive from mobile to desktop.",
-  "the style is futuristic and low-key.",
+  "Post-organic bauplan is a performance and research duo, combining dance and prosthesis.",
+  "The website is a portfolio of all of the performances, installations and video works.",
+  "It integrates three.js to display 3d models of the prostheses.",
+  "It features full screen videos and images.",
+  "It is fully responsive from mobile to desktop.",
+  "The style is futuristic and low-key.",
 ];
 
 // const frames1 = [Frame1, Frame2, Frame3, Frame4, Frame5];
@@ -58,7 +58,7 @@ const PostOrganicBauplan = () => {
         <Section1
           type={"client project:"}
           title={"post–organic bauplan"}
-          description={"performance & research."}
+          description={"performance & research"}
           logo={
             <Logo />
           }
