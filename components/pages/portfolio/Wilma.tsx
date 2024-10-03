@@ -67,7 +67,7 @@ const Wilma = () => {
             // />
             <Logo />
           }
-          bgColor={"bg-wilma1"}
+          bgColor={"bg-wilma2"}
           textColor={"text-white"}
           // bg={bg}
         />
@@ -77,7 +77,7 @@ const Wilma = () => {
           isSmallScreen={isSmallScreen}
         />
         <SectionFramesImage
-          bgColor={"bg-wilma1"}
+          bgColor={"bg-wilma2"}
           frames={frames2}
           isSmallScreen={isSmallScreen}
         />

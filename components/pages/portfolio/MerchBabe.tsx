@@ -32,7 +32,7 @@ const frames2: framesType[] = [
 const paragraphs = [
   "The site is a mobile-first designed web app that is responsive all the way up to desktop.",
   "The two main features are a responsive grid of portfolio works that are filterable by tags and a separate page for e-commerce which is integrated with PayPal.",
-  "The site has an overwhelming brutalist design language, to match the graphic design style of the artist.",
+  "The site has an overwhelming design language, to match the graphic design style of the artist.",
   "Marquees in the header and footer are obscured by page content as it scrolls past.",
   "Oversized typography is used on drop-downs, pop-ups, and menus.",
   "Display fonts are capatalized.",
@@ -71,7 +71,7 @@ const MerchBabe = () => {
               height={isSmallScreen ? "30vh" : "50vh"}
             />
           }
-          bgColor={""}
+          bgColor={"bg-white"}
           textColor={"text-mbOrange"}
         />
         <SectionFrames
@@ -80,7 +80,7 @@ const MerchBabe = () => {
           isSmallScreen={isSmallScreen}
         />
         <SectionFrames
-          bgColor={""}
+          bgColor={"bg-white"}
           frames={frames2}
           isSmallScreen={isSmallScreen}
         />

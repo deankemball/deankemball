@@ -29,7 +29,7 @@ const SectionFrames = ({
             return (
               <div
                 key={`frame-${i}`}
-                className="min-w-[100%] snap-x snap-mandatory snap-center flex justify-center"
+                className="min-w-[100%] snap-x snap-mandatory snap-center flex justify-center px-8"
               >
                 <Image
                   alt={`${project}-${i}`}
@@ -38,7 +38,7 @@ const SectionFrames = ({
                   loading="eager"
                   // width={"100vw"}
                   // height={isSmallScreen ? "70vh" : "800%"}
-                  className="rounded-md h-full w-screen flex flex-1 px-8"
+                  className="h-full w-screen flex flex-1 shadow-lg"
                   // objectFit="cover"
                   // objectFit=""
                   objectFit="scale-down"

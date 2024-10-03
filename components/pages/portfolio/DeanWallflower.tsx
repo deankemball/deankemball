@@ -75,7 +75,7 @@ const DeanWallflower = () => {
           // bg={bg}
         />
         <SectionFramesImageDesktop
-          bgColor={"bg-black"}
+          bgColor={"bg-dwred"}
           frames={frames1}
           isSmallScreen={isSmallScreen}
           project="deanwallflower"
@@ -87,13 +87,13 @@ const DeanWallflower = () => {
           project="deanwallflower"
         />
         <SectionFramesImageDesktop
-          bgColor={"bg-black"}
+          bgColor={"bg-dwred"}
           frames={frames3}
           isSmallScreen={isSmallScreen}
           project="deanwallflower"
         />
         <SectionInfo
-          bgColor={"bg-black"}
+          bgColor={"bg-dwred"}
           textColor={"text-white"}
           paragraphs={paragraphs}
           link="https://deanwallflower.vercel.app/"

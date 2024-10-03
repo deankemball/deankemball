@@ -12,19 +12,19 @@ export default function Footer({
   setSelected,
   selected,
 }: FooterProps): JSX.Element {
-  console.log(selected)
+  
   return (
     <div className="flex flex-col md:gap-1">
       {menuItems.map((item, i) => (
         <div
-          className=" font-regular tracking-wide text-2xl md:text-3xl lg:text-4xl text-right"
+          className="font-regular tracking-wide text-2xl md:text-3xl lg:text-4xl text-right"
           key={i}
         >
           <Link href={`/${item}`}
               onClick={() => setSelected(item)}
               className={clsx(
                 "transition-colors z-[99] font-medium",
-                selected === 'stick-and-choke' || selected === 'transcentury-update' ? 
+                selected === 'stick-and-choke' || selected === 'merchbabe' ? 
                 'text-black decoration-black opacity-50 hover:opacity-100 transition-colors select-none -space-y-2 text-2xl md:text-3xl lg:text-4xl cursor-pointer'
               :  selected === "portfolioDemo" 
               ? "text-white decoration-white opacity-50 hover:opacity-100 transition-colors select-none -space-y-2 text-2xl md:text-3xl lg:text-4xl cursor-pointer" :

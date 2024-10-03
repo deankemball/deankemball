@@ -27,7 +27,7 @@ const Section1 = ({
       className={clsx(
         bgColor,
         textColor,
-        "h-screen w-screen snap-y snap-mandatory snap-center flex flex-col justify-center items-center"
+        "h-screen min-h-screen w-screen snap-y snap-mandatory snap-center flex flex-col justify-center items-center"
       )}
     >
       <InfoBlockFront type={type} title={title} description={description} />

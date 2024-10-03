@@ -17,7 +17,7 @@ const SectionFrames = ({
     <section
       className={clsx(
         bgColor,
-        "h-screen flex flex-col justify-center snap-y snap-proximity snap-center"
+        "h-screen min-h-screen flex flex-col justify-center snap-y snap-proximity snap-center"
       )}
     >
       <div className="flex overflow-x-scroll snap-x snap-mandatory snap-center scrollbar-hide h-full w-screen items-center py-16 lg:py-20 lg:px-32">

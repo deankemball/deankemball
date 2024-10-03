@@ -65,8 +65,8 @@ const TCU = () => {
           logo={
             <Logo />
           }
-          bgColor={"bg-white"}
-          textColor={"text-black"}
+          bgColor={"bg-black"}
+          textColor={"text-white"}
         />
         <SectionFramesImage
           bgColor={"bg-black"}
@@ -84,8 +84,8 @@ const TCU = () => {
           isSmallScreen={isSmallScreen}
         />
         <SectionInfo
-          bgColor={"bg-white"}
-          textColor={"text-black"}
+          bgColor={"bg-black"}
+          textColor={"text-white"}
           paragraphs={paragraphs}
           link="https://www.transcenturyupdate.com/"
         />

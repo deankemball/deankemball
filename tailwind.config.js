@@ -25,6 +25,7 @@ module.exports = {
   		cdodger2: '#292929',
   		paper: '#F5F1F0',
   		yellow: '#FBFFDD',
+		// yellow: '#F1FF8C',
   		purple: '#7261e9'
   	},
   	extend: {

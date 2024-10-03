@@ -69,7 +69,7 @@ const StickAndChoke = () => {
           // bg={bg}
         />
         <SectionFramesImageDesktop
-          bgColor={"bg-white"}
+          bgColor={"bg-yellow"}
           frames={frames1}
           isSmallScreen={isSmallScreen}
           project="stick-and-choke"
@@ -81,7 +81,7 @@ const StickAndChoke = () => {
           project="stick-and-choke"
         />
         <SectionInfo
-          bgColor={"bg-white"}
+          bgColor={"bg-yellow"}
           textColor={"text-black"}
           paragraphs={paragraphs}
           link="https://stickandchoke.com/"

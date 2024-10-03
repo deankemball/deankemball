@@ -19,7 +19,7 @@ const SectionInfo = ({
   return (
     <div
       className={clsx(
-        "h-screen w-screen flex flex-col justify-start md:justify-center md:my-auto snap-y snap-center overflow-y-scroll scrollbar-hide text-lg xl:text-3xl",
+        "h-full py-28 md:pt-0 md:h-screen w-screen flex flex-col justify-start md:justify-center md:my-auto snap-y snap-center overflow-y-scroll scrollbar-hide text-lg xl:text-3xl",
         bgColor,
         textColor
       )}
