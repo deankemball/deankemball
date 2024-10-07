@@ -186,6 +186,7 @@ const SkillCard = ({tile, tileIndex, setTileIndex}: {tile: TileType, tileIndex: 
   const RightIcon = Right
   return (
         <motion.div
+        key={tile.title}
         className="flex flex-col justify-center items-center"
           initial="pageInitial"
           animate="pageAnimate"

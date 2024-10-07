@@ -22,14 +22,14 @@ export default function Layout({ children }: any) {
       router.pathname.split("/").length === 3 &&
       router.pathname.includes("portfolio")
     ) {
-      setSelected(router.pathname.includes("stick-and-choke") ? "stick-and-choke" : router.pathname.includes("merchbabe") ? "merchbabe" : "portfolioDemo");
+      setSelected(router.pathname.includes("stick-and-choke") ? "stick-and-choke" : "portfolioDemo");
     } else if (router.pathname.split("/").length === 2) {
       setSelected(router.pathname.split("/")[1]);
     }
   }, [router]);
 
   useEffect(() => {
-    setShowBackButton(selected === 'portfolioDemo' || selected === 'stick-and-choke' || selected === 'merchbabe' )
+    setShowBackButton(selected === 'portfolioDemo' || selected === 'stick-and-choke' )
   }, [selected]);
 
   return (

@@ -60,8 +60,8 @@ const TCU = () => {
       <div className="flex flex-col w-screen h-full">
         <Section1
           type={"client project:"}
-          title={"TransCentury Update"}
-          description={"content managed anouncement platform for a music festival"}
+          title={"transcentury update"}
+          description={"anouncement platform for a music festival"}
           logo={
             <Logo />
           }

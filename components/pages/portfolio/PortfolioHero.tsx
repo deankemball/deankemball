@@ -1,27 +1,22 @@
 import Link from "next/link";
 import React, { useState } from "react";
-import Fire from "../../../public/icons/fire.svg";
-import Carrot from "../../../public/icons/carrot.svg";
-import Game from "../../../public/icons/game.svg";
-import Camera from "../../../public/icons/camera.svg";
 import MusicVideo from "../../../public/icons/musicVideo.svg";
 import Bus from "../../../public/icons/bus.svg";
-import Party from "../../../public/icons/party.svg";
-import Needle from "../../../public/icons/needle.svg";
-import Arm from "../../../public/icons/Arm.svg";
+import SNC from '../../../public/icons/snc.svg'
+import TCU from '../../../public/icons/tcu.svg'
 import Left from '../../../public/icons/left.svg'
 import Right from '../../../public/icons/right.svg'
-import { clamp } from "../../../src/lib/clamp";
 import mod from "@/lib/mod";
 import clsx from "clsx";
 
-const projects = [
+export const projects = [
   {
     title: 'stick & choke',
     link: "/portfolio/stick-and-choke",
     type: "tattoo artist",
     year: "2024",
-    icon: Needle,
+    icon: <SNC className='dark:invert invert-0 group-hover:animate-[spin_2s_linear_infinite]'  />,
+    url: 'https://stickandchoke.com/',
   },
   // {
   //   title: 'post–organic bauplan',
@@ -35,28 +30,25 @@ const projects = [
     link: "/portfolio/transcentury-update",
     type: "music festival",
     year: "2024",
-    icon: Party,
+    icon: <TCU className='dark:invert invert-0 group-hover:animate-scale'/>,
+    url: 'https://www.transcenturyupdate.com/',
+    credits: {design: {person: 'Alex Brade', link: 'https://www.alexbrade.de/'}}
   },
   {
     title: "deanwallflower",
     link: "/portfolio/deanwallflower",
     type: "new media artist",
     year: "2023",
-    icon: MusicVideo,
+    icon: <MusicVideo className='invert dark:invert-0 group-hover:animate-wiggle'/>,
+    url: 'https://deanwallflower.vercel.app/'
   },
   {
     title: "wilma",
     link: "/portfolio/wilma",
     type: "culture project",
     year: "2023",
-    icon: Bus,
-  },
-  {
-    title: "merchbabe",
-    link: "/portfolio/merchbabe",
-    type: `graphic designer`,
-    year: "2022",
-    icon: Fire,
+    icon: <Bus className='dark:invert-0 invert group-hover:animate-car' />,
+    url: 'https://www.kultourkutsche.de/'
   },
 ];
 
@@ -77,8 +69,8 @@ const Portfolio = () => {
                   className="flex w-full justify-between group"
                 >
                     <div className="flex flex-col h-full justify-between">
-                      <div className="text-3xl h-full group-hover:text-red group-hover:dark:text-red transition-colors md:text-3xl lg:text-4xl flex">
-                            {<project.icon />}
+                      <div className={clsx("text-3xl h-full group-hover:text-red group-hover:dark:text-red transition-colors md:text-3xl lg:text-4xl flex")}>
+                            {project.icon}
                           </div>
                           <p className="text-black/50 dark:text-white/50 text-sm md:text-md lg:text-lg leading-none -mb-1 md:-mb-[6px] lg:-mb-2 transition-colors">
                           {project.year}
@@ -124,7 +116,6 @@ const Portfolio = () => {
             }
             <button
                   onClick={() => setPageNo(prev => mod(prev + 1, totalPages))}
-                  // disabled={pageNo === totalPages - 1}
                   className="transition-colors disabled:opacity-50 disabled:hover:text-inherit md:hover:text-red active:text-red text-4xl"
                 >
                   <RightIcon />

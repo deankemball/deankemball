@@ -1,6 +1,6 @@
 import React from "react";
 import clsx from "clsx";
-import { framesType } from "./MerchBabe";
+import { framesType } from "types";
 
 interface SectionFramesProps {
   bgColor: string;

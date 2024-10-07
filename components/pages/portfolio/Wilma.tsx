@@ -57,7 +57,7 @@ const Wilma = () => {
       <div className="flex flex-col w-screen h-full">
         <Section1
           type={"client project:"}
-          title={"WILMA"}
+          title={"wilma"}
           description={"landing page for a mobile socio-cultural project"}
           logo={
             // <Logo

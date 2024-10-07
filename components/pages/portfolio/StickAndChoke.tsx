@@ -59,7 +59,7 @@ const StickAndChoke = () => {
       <div className="flex flex-col w-screen h-full">
         <Section1
           type={"client project:"}
-          title={"Stick & Choke"}
+          title={"stick & choke"}
           description={"portfolio and booking platform for tattoo artist"}
           logo={
             <Logo />

@@ -40,7 +40,27 @@ module.exports = {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
-  		colors: {}
+  		colors: {},
+		  keyframes: {
+			scale: {
+			  '0%': { transform: 'scale(100%)' },
+			  '50%': { transform: 'scale(110%)' },
+			  '100%': { transform: 'scale(100%)' },
+			},
+			wiggle: {
+			  '0%, 100%': { transform: 'rotate(-4deg)' },
+			  '50%': { transform: 'rotate(4deg)' },
+			},
+			bounceAndWiggle: {
+				'0%, 100%': { transform: 'translateY(0) rotate(-4deg)' },
+				'50%': { transform: 'translateY(-10px) rotate(4deg)' },
+			  },
+		  },
+		  animation: {
+        scale: 'scale 1s ease-in-out infinite',
+        wiggle: 'wiggle 1s ease-in-out infinite',
+		car: 'bounceAndWiggle 1s infinite'
+      }
   	}
   },
   plugins: [require("tailwind-scrollbar-hide"), require("tailwindcss-animate")],
