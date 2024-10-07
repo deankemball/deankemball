@@ -96,7 +96,7 @@ const DeanWallflower = () => {
           bgColor={"bg-dwred"}
           textColor={"text-white"}
           paragraphs={paragraphs}
-          link="https://deanwallflower.vercel.app/"
+          link='https://deanwallflower.com/'
         />
       </div>
     </>

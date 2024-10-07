@@ -41,7 +41,7 @@ export const projects = [
     type: "new media artist",
     year: "2023",
     icon: <MusicVideo className='invert dark:invert-0 group-hover:animate-wiggle'/>,
-    url: 'https://deanwallflower.vercel.app/'
+    url: 'https://deanwallflower.com/'
   },
   {
     title: "wilma",
