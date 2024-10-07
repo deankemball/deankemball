@@ -19,11 +19,12 @@ export const projects = [
     url: 'https://stickandchoke.com/',
   },
   // {
-  //   title: 'post–organic bauplan',
-  //   link: "/portfolio/post-organic-bauplan",
-  //   type: "performance & research",
-  //   year: "2024",
-  //   icon: Arm,
+    //   title: 'post–organic bauplan',
+    //   link: "/portfolio/post-organic-bauplan",
+    //   type: "performance & research",
+    //   year: "2024",
+    //   icon: Arm,
+    //   url: 'https://www.postorganic-bauplan.com/'
   // },
   {
     title: 'transcentury update',
