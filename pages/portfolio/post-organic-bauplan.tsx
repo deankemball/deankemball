@@ -1,8 +1,6 @@
 import { ReactElement } from "react";
 import Layout from "../../components/layout/Layout";
-import DeanWallflower from "../../components/pages/portfolio/DeanWallflower";
 import type { NextPageWithLayout } from "../_app";
-import StickAndChoke from "../../components/pages/portfolio/StickAndChoke";
 import PostOrganicBauplan from "../../components/pages/portfolio/PostOrganicBauplan";
 import Head from "next/head";
 

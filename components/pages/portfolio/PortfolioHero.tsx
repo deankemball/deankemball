@@ -2,6 +2,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import MusicVideo from "../../../public/icons/musicVideo.svg";
 import Bus from "../../../public/icons/bus.svg";
+import Arm from "../../../public/icons/arm.svg";
 import SNC from '../../../public/icons/snc.svg'
 import TCU from '../../../public/icons/tcu.svg'
 import Left from '../../../public/icons/left.svg'
@@ -17,15 +18,17 @@ export const projects = [
     year: "2024",
     icon: <SNC className='dark:invert invert-0 group-hover:animate-[spin_2s_linear_infinite]'  />,
     url: 'https://stickandchoke.com/',
+    disabled: false
   },
-  // {
-    //   title: 'post–organic bauplan',
-    //   link: "/portfolio/post-organic-bauplan",
-    //   type: "performance & research",
-    //   year: "2024",
-    //   icon: Arm,
-    //   url: 'https://www.postorganic-bauplan.com/'
-  // },
+  {
+      title: 'post–organic bauplan',
+      link: "/portfolio/post-organic-bauplan",
+      type: "performance & research",
+      year: "2024",
+      icon:  <Arm className='dark:invert invert-0 group-hover:animate-[spin_2s_linear_infinite]'  />,
+      url: 'https://www.postorganic-bauplan.com/',
+      disabled: true
+  },
   {
     title: 'transcentury update',
     link: "/portfolio/transcentury-update",
@@ -33,7 +36,8 @@ export const projects = [
     year: "2024",
     icon: <TCU className='dark:invert invert-0 group-hover:animate-scale'/>,
     url: 'https://www.transcenturyupdate.com/',
-    credits: {design: {person: 'Alex Brade', link: 'https://www.alexbrade.de/'}}
+    credits: {design: {person: 'Alex Brade', link: 'https://www.alexbrade.de/'}},
+    disabled: false
   },
   {
     title: "deanwallflower",
@@ -41,7 +45,8 @@ export const projects = [
     type: "new media artist",
     year: "2023",
     icon: <MusicVideo className='invert dark:invert-0 group-hover:animate-wiggle'/>,
-    url: 'https://deanwallflower.com/'
+    url: 'https://deanwallflower.com/',
+    disabled: false
   },
   {
     title: "wilma",
@@ -49,7 +54,8 @@ export const projects = [
     type: "culture project",
     year: "2023",
     icon: <Bus className='dark:invert-0 invert group-hover:animate-car' />,
-    url: 'https://www.kultourkutsche.de/'
+    url: 'https://www.kultourkutsche.de/',
+    disabled: false
   },
 ];
 
@@ -63,7 +69,7 @@ const Portfolio = () => {
     <div className="flex flex-col gap-4">
       <div className="flex w-full justify-center items-center gap-4 md:gap-8 px-8 md:px-0">
         <div className="flex flex-col gap-4 md:gap-8 w-full max-w-xl md:h-[576px] md:min-h-[576px]">
-          {projects.slice(pageNo * projectsPerPage, pageNo * projectsPerPage + projectsPerPage).map((project, i) => (
+          {projects.filter((item) => !item.disabled).slice(pageNo * projectsPerPage, pageNo * projectsPerPage + projectsPerPage).map((project, i) => (
             <div key={project.link} className="flex flex-col gap-2 h-full w-full">
               <Link key={i} href={project.link}
                   target={project.link.includes("http") ? "_blank" : ""}
