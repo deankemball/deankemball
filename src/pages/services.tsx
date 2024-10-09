@@ -1,8 +1,8 @@
 import { ReactElement } from "react";
-import Layout from "../components/layout/Layout";
+import Layout from "@/components/layout/Layout";
 import type { NextPageWithLayout } from "./_app";
 import Head from "next/head";
-import ServicesHero from "components/pages/services/ServicesHero";
+import ServicesHero from "@/components/pages/services/ServicesHero";
 
 const Services: NextPageWithLayout = () => {
   return <ServicesHero />;

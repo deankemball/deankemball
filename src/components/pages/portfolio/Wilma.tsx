@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from "react";
-import WilmaLogo from "../../../public/wilma/wilma-logo.webp";
-import Frame1 from "../../../public/wilma/wilma-1.webp";
-import Frame2 from "../../../public/wilma/wilma-2.webp";
-import Frame3 from "../../../public/wilma/wilma-3.webp";
-import Frame4 from "../../../public/wilma/wilma-4.webp";
-import Frame5 from "../../../public/wilma/wilma-5.webp";
-import Frame6 from "../../../public/wilma/wilma-6.webp";
+import Frame1 from "public/wilma/wilma-1.webp";
+import Frame2 from "public/wilma/wilma-2.webp";
+import Frame3 from "public/wilma/wilma-3.webp";
+import Frame4 from "public/wilma/wilma-4.webp";
+import Frame5 from "public/wilma/wilma-5.webp";
+import Frame6 from "public/wilma/wilma-6.webp";
 import Section1 from "./Section1";
 import SectionInfo from "./SectionInfo";
 import SectionFramesImage from "./SectionFramesImage";
-import Image from "next/image";
 
 const paragraphs = [
   "Wilma is a community culture and art project that aims to create a space for people to connect and learn together.",

@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import MarqueeItem from "components/marquee";
+import MarqueeItem from "@/components/marquee";
 import { Dispatch, ReactElement, SetStateAction, useEffect, useState } from "react";
 import {XIcon} from 'lucide-react'
 import mod from "@/lib/mod";
-import Left from '../../../public/icons/left.svg'
-import Right from '../../../public/icons/right.svg'
+import Left from 'public/icons/left.svg'
+import Right from 'public/icons/right.svg'
 
 type TileType = {
   title: string,

@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
-import Frame1 from "../../../public/tcu/frames/frame1.png";
-import Frame2 from "../../../public/tcu/frames/frame2.png";
-import Frame3 from "../../../public/tcu/frames/frame3.png";
-import Frame4 from "../../../public/tcu/frames/frame4.png";
-import Frame5 from "../../../public/tcu/frames/frame5.png";
-import Frame6 from "../../../public/tcu/frames/frame6.png";
-import Frame7 from "../../../public/tcu/frames/frame7.png";
-import Frame8 from "../../../public/tcu/frames/frame8.png";
-import Frame9 from "../../../public/tcu/frames/frame9.png";
+import Frame1 from "public/tcu/frames/frame1.png";
+import Frame2 from "public/tcu/frames/frame2.png";
+import Frame3 from "public/tcu/frames/frame3.png";
+import Frame4 from "public/tcu/frames/frame4.png";
+import Frame5 from "public/tcu/frames/frame5.png";
+import Frame6 from "public/tcu/frames/frame6.png";
+import Frame7 from "public/tcu/frames/frame7.png";
+import Frame8 from "public/tcu/frames/frame8.png";
+import Frame9 from "public/tcu/frames/frame9.png";
 import Section1 from "./Section1";
 import SectionInfo from "./SectionInfo";
 import SectionFramesImage from "./SectionFramesImage";
 import Image from "next/image";
-import TCULogo from '../../../public/tcu/TCU-Logo_2_Vektor.png'
+import TCULogo from 'public/tcu/TCU-Logo_2_Vektor.png'
 
 const paragraphs = [
   'TransCentury Update is a music festival taking place in leipzig at several venues and over several days.',

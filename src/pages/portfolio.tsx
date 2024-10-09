@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
-import Layout from "../components/layout/Layout";
-import PortfolioHero from "../components/pages/portfolio/PortfolioHero";
+import Layout from "@/components/layout/Layout";
+import PortfolioHero from "@/components/pages/portfolio/PortfolioHero";
 import type { NextPageWithLayout } from "./_app";
 import Head from "next/head";
 

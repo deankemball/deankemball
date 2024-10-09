@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
-import IndexHero from "../components/pages/index/IndexHero";
-import Layout from "../components/layout/Layout";
+import IndexHero from "@/components/pages/index/IndexHero";
+import Layout from "@/components/layout/Layout";
 import type { NextPageWithLayout } from "./_app";
 import Head from "next/head";
 

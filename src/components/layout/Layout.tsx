@@ -8,7 +8,7 @@ import BackButton from "./BackButton";
 import { Analytics } from "@vercel/analytics/react"
 import { Toaster } from "@/components/ui/toaster"
 import clsx from "clsx";
-import { montserrat } from "pages/_app";
+import { montserrat } from "@/pages/_app";
 
 export default function Layout({ children }: any) {
   const router = useRouter();

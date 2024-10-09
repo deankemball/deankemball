@@ -1,18 +1,18 @@
 import { ReactElement } from "react";
-import Layout from "../../components/layout/Layout";
+import Layout from "@/components/layout/Layout";
 import type { NextPageWithLayout } from "../_app";
-import Wilma from "../../components/pages/portfolio/Wilma";
+import PostOrganicBauplan from "@/components/pages/portfolio/PostOrganicBauplan";
 import Head from "next/head";
 
 const Portfolio: NextPageWithLayout = () => {
-  return <Wilma />;
+  return <PostOrganicBauplan />;
 };
 
 Portfolio.getLayout = function getLayout(page: ReactElement) {
   return (
     <Layout>
       <Head>
-      <title>Portfolio—Wilma</title>
+      <title>Portfolio—Post-Organic Bauplan</title>
       </Head>
       <main className="h-screen flex flex-col justify-start self-center">
         {page}

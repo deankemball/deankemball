@@ -1,12 +1,12 @@
 import Link from "next/link";
 import React, { useState } from "react";
-import MusicVideo from "../../../public/icons/musicVideo.svg";
-import Bus from "../../../public/icons/bus.svg";
-import Arm from "../../../public/icons/arm.svg";
-import SNC from '../../../public/icons/snc.svg'
-import TCU from '../../../public/icons/tcu.svg'
-import Left from '../../../public/icons/left.svg'
-import Right from '../../../public/icons/right.svg'
+import MusicVideo from "public/icons/musicVideo.svg";
+import Bus from "public/icons/bus.svg";
+import Arm from "public/icons/arm.svg";
+import SNC from 'public/icons/snc.svg'
+import TCU from 'public/icons/tcu.svg'
+import Left from 'public/icons/left.svg'
+import Right from 'public/icons/right.svg'
 import mod from "@/lib/mod";
 import clsx from "clsx";
 

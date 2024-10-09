@@ -1,7 +1,7 @@
-import Twitter from "../../../public/contact/twitter.svg";
-import Email from "../../../public/contact/email.svg";
-import Discord from "../../../public/contact/discord.svg";
-import Github from "../../../public/contact/github.svg";
+import Twitter from "public/contact/twitter.svg";
+import Email from "public/contact/email.svg";
+import Discord from "public/contact/discord.svg";
+import Github from "public/contact/github.svg";
 import ContactMethod from "./ContactMethod";
 
 const contactMethods = {
