@@ -1,15 +1,8 @@
-import Twitter from "public/contact/twitter.svg";
 import Email from "public/contact/email.svg";
-import Discord from "public/contact/discord.svg";
 import Github from "public/contact/github.svg";
 import ContactMethod from "./ContactMethod";
 
 const contactMethods = {
-  // discord: {
-  //   link: "https://discordapp.com/users/729637167151710298",
-  //   icon: Discord,
-  //   handle: "@deankemball",
-  // },
   github: {
     link: "https://github.com/deankemball",
     icon: Github,

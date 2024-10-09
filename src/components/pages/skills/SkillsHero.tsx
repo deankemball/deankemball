@@ -227,7 +227,7 @@ const SkillCard = ({tile, tileIndex, setTileIndex}: {tile: TileType, tileIndex: 
         <h1 className="text-3xl md:text-4xl underline decoration-red font-medium">{tile.title}</h1>
         <XIcon className="h-[32px] md:h-[36px] w-[32px] md:w-[36px] cursor-pointer hover:text-red transition-colors" onClick={()=>setTileIndex(0)} />
       </div>
-      <div id='skills' className="flex flex-col gap-1 text-2xl md:text-3xl h-full">
+      <div id='skills' className="flex flex-col gap-1 text-xl md:text-2xl lg:text-3xl h-full">
         {tile.text.map((point)=>{
           return point
         })}

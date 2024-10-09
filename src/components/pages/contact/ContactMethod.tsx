@@ -18,8 +18,9 @@ const ContactMethod = ({ link, icon, handle }: ContactmeMethodProps) => {
     navigator.clipboard.writeText(newClip).then(
       () => {
         toast({
-          title: 'E-mail Address copied to clipboard'
-          //   description: result.message,
+          title: '✓ copied',
+          duration: 5000, // Adjust if needed
+          className: 'animate-in fade-in slide-in-from-right-10 duration-500'
         })
       },
       () => {
