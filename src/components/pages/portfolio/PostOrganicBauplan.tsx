@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
-// import Frame1 from "../../../public/stick/stickandchoke.com_en-1.png";
-// import Frame2 from "../../../public/stick/stickandchoke.com_en-2.png";
-// import Frame3 from "../../../public/stick/stickandchoke.com_en-3.png";
-// import Frame4 from "../../../public/stick/stickandchoke.com_en-4.png";
-// import Frame5 from "../../../public/stick/stickandchoke.com_en-5.png";
-// import Frame6 from "../../../public/stick/stickandchoke.com_en-6.png";
-// import Frame7 from "../../../public/stick/stickandchoke.com_en-7.png";
-// import Frame8 from "../../../public/stick/stickandchoke.com_en-8.png";
-// import Frame9 from "../../../public/stick/stickandchoke.com_en-9.png";
+// import Frame1 from "public/stick/stickandchoke.com_en-1.png";
+// import Frame2 from "public/stick/stickandchoke.com_en-2.png";
+// import Frame3 from "public/stick/stickandchoke.com_en-3.png";
+// import Frame4 from "public/stick/stickandchoke.com_en-4.png";
+// import Frame5 from "public/stick/stickandchoke.com_en-5.png";
+// import Frame6 from "public/stick/stickandchoke.com_en-6.png";
+// import Frame7 from "public/stick/stickandchoke.com_en-7.png";
+// import Frame8 from "public/stick/stickandchoke.com_en-8.png";
+// import Frame9 from "public/stick/stickandchoke.com_en-9.png";
 // import SectionFramesImageDesktop from "./SectionFramesImageDesktop";
 import Section1 from "./Section1";
 import SectionInfo from "./SectionInfo";
 import Image from 'next/image'
-import POBLogo from '../../../public/pob/pob-logo.png'
+import POBLogo from 'public/pob/pob-logo.png'
 
 const paragraphs = [
   "Post-organic bauplan is a performance and research duo, combining dance and prosthesis.",
