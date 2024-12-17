@@ -11,8 +11,8 @@ import React, { useEffect, useState } from "react";
 // import SectionFramesImageDesktop from "./SectionFramesImageDesktop";
 import Section1 from "./Section1";
 import SectionInfo from "./SectionInfo";
-import Image from 'next/image'
-import POBLogo from 'public/pob/pob-logo.png'
+import Image from "next/image";
+import POBLogo from "public/pob/pob-logo.png";
 
 const paragraphs = [
   "Post-organic bauplan is a performance and research duo, combining dance and prosthesis.",
@@ -42,9 +42,8 @@ const useDeviceSize = () => {
 
 const Logo = () => {
   return (
-    <div className="w-[80vw] md:w-[40vw] flex items-center justify-center text-black"
-    >
-    <Image src={POBLogo} alt='post-organic-bauplan-logo' />
+    <div className="w-[80vw] md:w-[40vw] flex items-center justify-center text-black">
+      <Image src={POBLogo} alt="post-organic-bauplan-logo" />
     </div>
   );
 };
@@ -59,11 +58,9 @@ const PostOrganicBauplan = () => {
           type={"client project:"}
           title={"post–organic bauplan"}
           description={"performance & research"}
-          logo={
-            <Logo />
-          }
-          bgColor={"bg-purple"}
-          textColor={"text-white"}
+          logo={<Logo />}
+          bgColor={"bg-black"}
+          textColor={"text-purple"}
           // bg={bg}
         />
         {/* <SectionFramesImageDesktop
