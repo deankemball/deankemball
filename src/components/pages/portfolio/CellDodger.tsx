@@ -74,6 +74,8 @@ const CellDodger = () => {
           frames={frames1}
           isSmallScreen={isSmallScreen}
           project="cell-dodger"
+          collectionNo={0}
+          arrowColor={"white"}
         />
         <SectionFramesImage
           bgColor={"bg-cdodger2"}
@@ -85,6 +87,8 @@ const CellDodger = () => {
           frames={frames2}
           isSmallScreen={isSmallScreen}
           project="cell-dodger"
+          collectionNo={1}
+          arrowColor={"white"}
         />
         <SectionInfo
           bgColor={"bg-cdodger1"}
