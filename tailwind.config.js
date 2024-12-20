@@ -7,6 +7,7 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
     "./src/**/*.{js,ts,jsx,tsx}", // Include src
   ],
+  safelist: ["bg-white/50", "bg-black/50", "text-white/50", "text-black/50"],
   theme: {
     colors: {
       red: "#EF3E36",
