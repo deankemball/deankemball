@@ -2,10 +2,10 @@ import { ReactElement } from "react";
 import Layout from "@/components/layout/Layout";
 import type { NextPageWithLayout } from "../_app";
 import Head from "next/head";
-import PostOrganicBauplan from "@components/pages/portfolio/PostOrganicBauplan";
+import YesAICan from "@components/pages/portfolio/YesAICan";
 
 const Portfolio: NextPageWithLayout = () => {
-  return <PostOrganicBauplan />;
+  return <YesAICan />;
 };
 
 Portfolio.getLayout = function getLayout(page: ReactElement) {

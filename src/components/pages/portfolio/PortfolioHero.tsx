@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import MusicVideo from "public/icons/musicVideo.svg";
 import Bus from "public/icons/bus.svg";
 import Arm from "public/icons/arm.svg";
+import AI from "public/icons/ai.svg";
 import SNC from "public/icons/snc.svg";
 import TCU from "public/icons/tcu.svg";
 import Left from "public/icons/left.svg";
@@ -12,11 +13,11 @@ import clsx from "clsx";
 
 export const projects = [
   {
-    title: "post-organic bauplan",
-    link: "/portfolio/post-organic-bauplan",
-    type: "research performance",
+    title: "yes ai can",
+    link: "/portfolio/yes-ai-can",
+    type: "art festival",
     year: "2024",
-    icon: <Arm className="dark:invert invert-0 group-hover:animate-wiggle" />,
+    icon: <AI className="text-white group-hover:animate-pulse" />,
     url: "https://stickandchoke.com/",
     disabled: false,
   },
@@ -40,7 +41,7 @@ export const projects = [
       <Arm className="dark:invert invert-0 group-hover:animate-[spin_2s_linear_infinite]" />
     ),
     url: "https://www.postorganic-bauplan.com/",
-    disabled: true,
+    disabled: false,
   },
   {
     title: "transcentury update",
@@ -128,7 +129,7 @@ const Portfolio = () => {
                 </Link>
               </div>
             ))}
-          {totalPages >= 2 && projects.length > 6 ? (
+          {projects.length >= 6 ? (
             <div className="flex gap-8 mx-auto items-center w-full justify-center z-50 md:justify-between">
               <button
                 onClick={() => setPageNo((prev) => mod(prev - 1, totalPages))}

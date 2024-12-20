@@ -15,12 +15,11 @@ import Image from "next/image";
 import POBLogo from "public/pob/pob-logo.png";
 
 const paragraphs = [
-  "Post-organic bauplan is a performance and research duo, combining dance and prosthesis.",
-  "The website is a portfolio of all of the performances, installations and video works.",
-  "It integrates three.js to display 3d models of the prostheses.",
-  "It features full screen videos and images.",
+  "Yes AI can is an art festival on the themes of digital creation, artificial intellignce, and fake news.",
+  "The website is a landing page for the festival with all relevant information.",
+  "It features a multi-step form with file upload, caching, and e-mail triggers.",
+  "It integrates three.js to display a 3d model of the exhibition room.",
   "It is fully responsive from mobile to desktop.",
-  "The style is futuristic and low-key.",
 ];
 
 // const frames1 = [Frame1, Frame2, Frame3, Frame4, Frame5];
@@ -48,7 +47,7 @@ const Logo = () => {
   );
 };
 
-const PostOrganicBauplan = () => {
+const YesAICan = () => {
   const isSmallScreen: boolean = useDeviceSize() < 1024;
 
   return (
@@ -56,11 +55,11 @@ const PostOrganicBauplan = () => {
       <div className="flex flex-col w-screen h-full">
         <Section1
           type={"client project:"}
-          title={"post–organic bauplan"}
-          description={"performance & research"}
+          title={"yes ai can"}
+          description={"art festival"}
           logo={<Logo />}
-          bgColor={"bg-black"}
-          textColor={"text-purple"}
+          bgColor={"bg-ai"}
+          textColor={"text-black"}
           // bg={bg}
         />
         {/* <SectionFramesImageDesktop
@@ -76,8 +75,8 @@ const PostOrganicBauplan = () => {
           project="stick-and-choke"
         /> */}
         <SectionInfo
-          bgColor={"bg-black"}
-          textColor={"text-white"}
+          bgColor={"bg-white"}
+          textColor={"text-black"}
           paragraphs={paragraphs}
           link="https://www.postorganic-bauplan.com/"
         />
@@ -86,4 +85,4 @@ const PostOrganicBauplan = () => {
   );
 };
 
-export default PostOrganicBauplan;
+export default YesAICan;

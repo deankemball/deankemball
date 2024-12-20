@@ -11,8 +11,8 @@ import Frame9 from "public/stick/stickandchoke.com_en-9.png";
 import Section1 from "./Section1";
 import SectionInfo from "./SectionInfo";
 import SectionFramesImageDesktop from "./SectionFramesImageDesktop";
-import Image from 'next/image'
-import StickLogo from 'public/stick/logo.png'
+import Image from "next/image";
+import StickLogo from "public/stick/logo.png";
 
 const paragraphs = [
   "Stick & Choke is a Tattoo Artist based in Leipzig.",
@@ -44,9 +44,8 @@ const useDeviceSize = () => {
 
 const Logo = () => {
   return (
-    <div className="w-full px-32 flex items-center justify-center text-black"
-    >
-    <Image src={StickLogo} alt='stick-and-choke-logo' />
+    <div className="w-full px-32 flex items-center justify-center text-black">
+      <Image src={StickLogo} alt="stick-and-choke-logo" />
     </div>
   );
 };
@@ -61,24 +60,26 @@ const StickAndChoke = () => {
           type={"client project:"}
           title={"stick & choke"}
           description={"portfolio and booking platform for tattoo artist"}
-          logo={
-            <Logo />
-          }
+          logo={<Logo />}
           bgColor={"bg-yellow"}
           textColor={"text-black"}
           // bg={bg}
         />
         <SectionFramesImageDesktop
+          collectionNo={0}
           bgColor={"bg-yellow"}
           frames={frames1}
           isSmallScreen={isSmallScreen}
           project="stick-and-choke"
+          arrowColor="black"
         />
         <SectionFramesImageDesktop
+          collectionNo={1}
           bgColor={"bg-yellow"}
           frames={frames2}
           isSmallScreen={isSmallScreen}
           project="stick-and-choke"
+          arrowColor="black"
         />
         <SectionInfo
           bgColor={"bg-yellow"}

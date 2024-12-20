@@ -75,28 +75,34 @@ const DeanWallflower = () => {
           // bg={bg}
         />
         <SectionFramesImageDesktop
+          collectionNo={0}
           bgColor={"bg-dwred"}
           frames={frames1}
           isSmallScreen={isSmallScreen}
           project="deanwallflower"
+          arrowColor="white"
         />
         <SectionFramesImageDesktop
+          collectionNo={1}
           bgColor={"bg-dwred"}
           frames={frames2}
           isSmallScreen={isSmallScreen}
           project="deanwallflower"
+          arrowColor="white"
         />
         <SectionFramesImageDesktop
+          collectionNo={2}
           bgColor={"bg-dwred"}
           frames={frames3}
           isSmallScreen={isSmallScreen}
           project="deanwallflower"
+          arrowColor="white"
         />
         <SectionInfo
           bgColor={"bg-dwred"}
           textColor={"text-white"}
           paragraphs={paragraphs}
-          link='https://deanwallflower.com/'
+          link="https://deanwallflower.com/"
         />
       </div>
     </>

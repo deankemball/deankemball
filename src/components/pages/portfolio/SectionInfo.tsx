@@ -25,7 +25,7 @@ const SectionInfo = ({
       )}
     >
       <div className="lg:columns-2 px-8 gap-8 max-w-7xl mx-auto relative">
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-2 md:gap-2 lg:gap-4">
           {paragraphs.map((paragraph, i) => {
             return (
               <p className="break-words" key={i}>
@@ -33,8 +33,13 @@ const SectionInfo = ({
               </p>
             );
           })}
-          <a href={link} target="_blank" rel="noreferrer" className="underline transition-colors">
-              visit website
+          <a
+            href={link}
+            target="_blank"
+            rel="noreferrer"
+            className="underline transition-colors"
+          >
+            visit website
           </a>
         </div>
       </div>
