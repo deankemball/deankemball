@@ -18,7 +18,7 @@ export const projects = [
     type: "art festival",
     year: "2024",
     icon: <AI className="text-white group-hover:animate-pulse" />,
-    url: "https://stickandchoke.com/",
+    url: "https://yes-ai-can.art/",
     disabled: false,
   },
   {

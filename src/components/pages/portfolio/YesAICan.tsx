@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
-// import Frame1 from "public/stick/stickandchoke.com_en-1.png";
-// import Frame2 from "public/stick/stickandchoke.com_en-2.png";
-// import Frame3 from "public/stick/stickandchoke.com_en-3.png";
-// import Frame4 from "public/stick/stickandchoke.com_en-4.png";
-// import Frame5 from "public/stick/stickandchoke.com_en-5.png";
-// import Frame6 from "public/stick/stickandchoke.com_en-6.png";
-// import Frame7 from "public/stick/stickandchoke.com_en-7.png";
-// import Frame8 from "public/stick/stickandchoke.com_en-8.png";
-// import Frame9 from "public/stick/stickandchoke.com_en-9.png";
-// import SectionFramesImageDesktop from "./SectionFramesImageDesktop";
+import Frame1 from "public/yaic/yaic1.jpg";
+import Frame2 from "public/yaic/yaic2.jpg";
+import Frame3 from "public/yaic/yaic3.jpg";
+import Frame4 from "public/yaic/yaic4.jpg";
+import Frame5 from "public/yaic/yaic5.jpg";
+import Frame6 from "public/yaic/yaic6.jpg";
+import Frame7 from "public/yaic/yaic7.jpg";
+import Frame8 from "public/yaic/yaic8.jpg";
+import SectionFramesImageDesktop from "./SectionFramesImageDesktop";
 import Section1 from "./Section1";
 import SectionInfo from "./SectionInfo";
 import Image from "next/image";
@@ -18,12 +17,12 @@ const paragraphs = [
   "Yes AI can is an art festival on the themes of digital creation, artificial intellignce, and fake news.",
   "The website is a landing page for the festival with all relevant information.",
   "It features a multi-step form with file upload, caching, and e-mail triggers.",
-  "It integrates three.js to display a 3d model of the exhibition room.",
+  "It integrates three.js to display a 3d model of the exhibition room, which is the Nikolaikirche in Rostock.",
   "It is fully responsive from mobile to desktop.",
 ];
 
-// const frames1 = [Frame1, Frame2, Frame3, Frame4, Frame5];
-// const frames2 = [Frame6, Frame7, Frame8, Frame9];
+const frames1 = [Frame1, Frame2, Frame3, Frame4];
+const frames2 = [Frame5, Frame6, Frame7, Frame8];
 
 const useDeviceSize = () => {
   const [width, setWidth] = useState(0);
@@ -62,20 +61,24 @@ const YesAICan = () => {
           textColor={"text-black"}
           // bg={bg}
         />
-        {/* <SectionFramesImageDesktop
-          bgColor={"bg-white"}
+        <SectionFramesImageDesktop
+          bgColor={"bg-ai"}
           frames={frames1}
           isSmallScreen={isSmallScreen}
-          project="stick-and-choke"
+          project="yes-ai-can"
+          collectionNo={0}
+          arrowColor={"black"}
         />
         <SectionFramesImageDesktop
-          bgColor={"bg-purple"}
+          bgColor={"bg-ai"}
           frames={frames2}
           isSmallScreen={isSmallScreen}
-          project="stick-and-choke"
-        /> */}
+          project="yes-ai-can"
+          collectionNo={1}
+          arrowColor={"black"}
+        />
         <SectionInfo
-          bgColor={"bg-white"}
+          bgColor={"bg-ai"}
           textColor={"text-black"}
           paragraphs={paragraphs}
           link="https://www.postorganic-bauplan.com/"

@@ -56,8 +56,8 @@ const SectionFrames = ({
         "h-screen flex flex-col justify-center snap-y snap-proximity snap-center relative"
       )}
     >
-      <div className="absolute bottom-8 w-full z-[99]">
-        <div className="flex items-center justify-center gap-4 p-2 w-fit mx-auto">
+      <div className="absolute bottom-6 w-full z-[99]">
+        <div className="flex items-center justify-center gap-4 w-fit mx-auto">
           <button
             onClick={() =>
               scrollPage("left", frameNo, setFrameNo, frames.length)

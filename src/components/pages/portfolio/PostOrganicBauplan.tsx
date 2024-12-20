@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from "react";
-// import Frame1 from "public/stick/stickandchoke.com_en-1.png";
-// import Frame2 from "public/stick/stickandchoke.com_en-2.png";
-// import Frame3 from "public/stick/stickandchoke.com_en-3.png";
-// import Frame4 from "public/stick/stickandchoke.com_en-4.png";
-// import Frame5 from "public/stick/stickandchoke.com_en-5.png";
-// import Frame6 from "public/stick/stickandchoke.com_en-6.png";
-// import Frame7 from "public/stick/stickandchoke.com_en-7.png";
-// import Frame8 from "public/stick/stickandchoke.com_en-8.png";
-// import Frame9 from "public/stick/stickandchoke.com_en-9.png";
-// import SectionFramesImageDesktop from "./SectionFramesImageDesktop";
+import Frame1 from "public/pob/pob1.jpg";
+import Frame2 from "public/pob/pob2.jpg";
+import Frame3 from "public/pob/pob3.jpg";
+import Frame4 from "public/pob/pob4.png";
+import Frame5 from "public/pob/pob5.jpg";
+import Frame6 from "public/pob/pob6.jpg";
+import Frame7 from "public/pob/pob7.jpg";
+import Frame8 from "public/pob/pob8.jpg";
+import Frame9 from "public/pob/pob9.jpg";
+import Frame10 from "public/pob/pob99.jpg";
+import SectionFramesImageDesktop from "./SectionFramesImageDesktop";
 import Section1 from "./Section1";
 import SectionInfo from "./SectionInfo";
 import Image from "next/image";
@@ -23,8 +24,9 @@ const paragraphs = [
   "The style is futuristic and low-key.",
 ];
 
-// const frames1 = [Frame1, Frame2, Frame3, Frame4, Frame5];
-// const frames2 = [Frame6, Frame7, Frame8, Frame9];
+const frames1 = [Frame1, Frame2, Frame3];
+const frames2 = [Frame4, Frame5, Frame6, Frame7];
+const frames3 = [Frame8, Frame9, Frame10];
 
 const useDeviceSize = () => {
   const [width, setWidth] = useState(0);
@@ -63,18 +65,30 @@ const PostOrganicBauplan = () => {
           textColor={"text-purple"}
           // bg={bg}
         />
-        {/* <SectionFramesImageDesktop
-          bgColor={"bg-white"}
+        <SectionFramesImageDesktop
+          bgColor={"bg-black"}
           frames={frames1}
           isSmallScreen={isSmallScreen}
-          project="stick-and-choke"
+          project="postorganic-bauplan"
+          collectionNo={0}
+          arrowColor={"white"}
         />
         <SectionFramesImageDesktop
-          bgColor={"bg-purple"}
+          bgColor={"bg-black"}
           frames={frames2}
           isSmallScreen={isSmallScreen}
-          project="stick-and-choke"
-        /> */}
+          project="postorganic-bauplan"
+          collectionNo={1}
+          arrowColor={"white"}
+        />
+        <SectionFramesImageDesktop
+          bgColor={"bg-black"}
+          frames={frames3}
+          isSmallScreen={isSmallScreen}
+          project="postorganic-bauplan"
+          collectionNo={2}
+          arrowColor={"white"}
+        />
         <SectionInfo
           bgColor={"bg-black"}
           textColor={"text-white"}

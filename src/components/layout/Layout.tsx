@@ -5,15 +5,15 @@ import ThemeSwitch from "./ThemeSwitch";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import BackButton from "./BackButton";
-import { Analytics } from "@vercel/analytics/react"
-import { Toaster } from "@/components/ui/toaster"
+import { Analytics } from "@vercel/analytics/react";
+import { Toaster } from "@/components/ui/toaster";
 import clsx from "clsx";
 import { montserrat } from "@/pages/_app";
 
 export default function Layout({ children }: any) {
   const router = useRouter();
   const [selected, setSelected] = useState("");
-  const [showBackButton, setShowBackButton] = useState(false)
+  const [showBackButton, setShowBackButton] = useState(false);
 
   useEffect(() => {
     if (router.pathname.split("/")[1] === "") {
@@ -22,14 +22,20 @@ export default function Layout({ children }: any) {
       router.pathname.split("/").length === 3 &&
       router.pathname.includes("portfolio")
     ) {
-      setSelected(router.pathname.includes("stick-and-choke") ? "stick-and-choke" : "portfolioDemo");
+      setSelected(
+        router.pathname.includes("stick-and-choke")
+          ? "stick-and-choke"
+          : "portfolioDemo"
+      );
     } else if (router.pathname.split("/").length === 2) {
       setSelected(router.pathname.split("/")[1]);
     }
   }, [router]);
 
   useEffect(() => {
-    setShowBackButton(selected === 'portfolioDemo' || selected === 'stick-and-choke' )
+    setShowBackButton(
+      selected === "portfolioDemo" || selected === "stick-and-choke"
+    );
   }, [selected]);
 
   return (
@@ -43,7 +49,12 @@ export default function Layout({ children }: any) {
           dark: "dark",
         }}
       >
-        <div className={clsx(montserrat.className, "min-h-screen w-screen bg-white dark:bg-black flex-col flex justify-between z-[99] relative scrollbar-hide")}>
+        <div
+          className={clsx(
+            montserrat.className,
+            "min-h-screen w-screen bg-white dark:bg-black flex-col flex justify-between z-[99] relative scrollbar-hide"
+          )}
+        >
           {showBackButton && (
             <BackButton link={"/portfolio"} selected={selected} />
           )}
